@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -12,87 +11,69 @@
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
-    <section class="description__content">
+    <section class="description">
       <div class="description__wrapper">
         <h1 class="description__title">Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
         <p class="description__slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
-    <section class="main-description__content">
-      <div class="main-description__wrapper">
-        <h2 class="main-description__title">Настоящий городок</h2>
-        <p class="main-description__number">- № 1 -</p>
-        <p class="main-description__slogan">Седона не аттракцион для<br> туристов, там течет своя<br> жизнь</p>
-        <img class="main-description__image" src="img/photo-city.jpg" width="512" height="256" alt="Фрагмент города">
-      </div>
-    </section>
-    <section class="attractions">
-      <div class="attractions__wrapper">
-        <h2 class="visually-hidden">Наши достопримечательности</h2>
-        <ul class="attractions-list">
-          <li class="attractions__item attractions__item--housing">
-            <h3 class="attractions__title">Жилье</h3>
-            <p class="attractions__description">Рекомендуем пожить в<br> настоящем мотеле, все<br> как в кино!</p>
-          </li>
-          <li class="attractions__item attractions__item--food">
-            <h3 class="attractions__title">Еда</h3>
-            <p class="attractions__description">Всегда заказывайте<br> фирменный бургер,<br>Вы не разочаруетесь!</p>
-          </li>
-          <li class="attractions__item attractions__item--souvenirs">
-            <h3 class="attractions__title">Сувениры</h3>
-            <p class="attractions__description">Не только китайского,<br> но и местного<br> производства!</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="city-description__content">
-      <div class="city-description__wrapper">
-        <img class="city-description__image" src="img/bridge.jpg" width="512" height="256" alt="Фрагмент каньона">
-        <h2 class="city-description__title">Там есть<br> мост дьявола</h2>
-        <p class="city-description__number">- № 2 -</p>
-        <p class="city-description__slogan">Да, по нему можно<br> пройти! Если вы<br> осмелитесь, конечно</p>
-      </div>
-    </section>
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__number">- № 3 -</p>
-            <p class="advantages__description">Все интересные места<br> находятся очень близко</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__number">- № 4 -</p>
-            <p class="advantages__description">Ехать в Седону из Лас-<br>Вегаса совсем<br> не скучно!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <p class="advantages__number">- № 5 -</p>
-            <p class="advantages__description">Большинство едет в гранд каньон<br> и толпится там</p>
-          </li>
-        </ul>
-      </div>
+    <section class="main-description">
+      <h2 class="visually-hidden">Наши достопримечательности</h2>
+      <ul class="main-description__list">
+        <li class="main-description__item">
+          <h2 class="main-description__title">Настоящий городок</h2>
+          <p class="main-description__slogan">Седона не аттракцион для<br> туристов, там течет своя<br> жизнь</p>
+          <img class="main-description__image" src="img/photo-city.pg" width="512" height="256" alt="Фрагмент города">
+          <ul class="attractions-list">
+            <li class="attractions__item attractions__item--housing">
+              <h3 class="attractions__title">Жилье</h3>
+              <p class="attractions__description">Рекомендуем пожить в<br> настоящем мотеле, все<br> как в кино!</p>
+            </li>
+            <li class="attractions__item attractions__item--food">
+              <h3 class="attractions__title">Еда</h3>
+              <p class="attractions__description">Всегда заказывайте<br> фирменный бургер,<br>Вы не разочаруетесь!</p>
+            </li>
+            <li class="attractions__item attractions__item--souvenirs">
+              <h3 class="attractions__title">Сувениры</h3>
+              <p class="attractions__description">Не только китайского,<br> но и местного<br> производства!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="main-description__item">
+          <img class="main-description__image" src="img/bridge.jpg" width="512" height="256" alt="Фрагмент каньона">
+          <h2 class="main-description__title">Там есть<br> мост дьявола</h2>
+          <p class="main-description__slogan">Да, по нему можно<br> пройти! Если вы<br> осмелитесь, конечно</p>
+        </li>
+        <li class="main-description__item main-description__item--grey">
+          <h3 class="main-description__title">Небольшая площадь</h3>
+          <p class="main-description__description">Все интересные места<br> находятся очень близко</p>
+        </li>
+        <li class="main-description__item main-description__item--grey">
+          <h3 class="main-description__title">Красивая дорога</h3>
+          <p class="main-description__slogan">Ехать в Седону из Лас-<br>Вегаса совсем<br> не скучно!</p>
+        </li>
+        <li class="main-description__item main-description__item--grey">
+          <h3 class="main-description__title">Мало туристов</h3>
+          <p class="main-description__description">Большинство едет в гранд каньон<br> и толпится там</p>
+        </li>
+      </ul>
     </section>
     <section class="order">
       <div class="order__wrapper">
@@ -101,17 +82,17 @@
           седоне</p>
         <a class="order__to-all button" href="#">Найти гостиницу</a>
         <a class="order__link" href="#">
-          <img class="order-card__image" src="img/card.jpg" width="768" height="350" alt="Карта">
+          <img class="order__card-image" src="img/card.jpg" width="768" height="350" alt="Карта">
         </a>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts">
+      <div class="contacts">
         <b class="contacts__title">#VISITSEDONA</b>
       </div>
-      <div class="main-footer__social">
+      <div class="social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -133,4 +114,3 @@
   </footer>
 </body>
 </html>
-
