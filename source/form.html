@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-catalog-container">
+    <section class="description description--inner">
+      <h1 class="description__title">
+        Оставьте свой отзыв
+      </h1>
+      <p class="description__slogan">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>
+        а также о посещенных вами достопримечательностях</p>
+    </section>
+    <section class="form">
+      <form class="form__form" action="#" method="post">
+        <div class="form__block">
+          <h2 class="form__block-title">Представьтесь:</h2>
+          <label class="visually-hidden" for="field">ИМЯ*:</label>
+          <input class="form__block__field form__block__field--blue" type="text" id="field" placeholder="Петр" required>
+          <label class="visually-hidden" for="empty">ФАМИЛИЯ*:</label>
+          <input class="form__block__field form__block__field--blue" type="text" id="empty" placeholder="Пустота"
+            required>
+          <label class="visually-hidden" for="surname">ОТЧЕСТВО:</label>
+          <input class="form__block__field form__block__field--blue" type="text" id="surname" placeholder="Викторович"
+            required>
+        </div>
+        <div class="form-contacts">
+          <h2 class="form-contacts__title">Контактная информация</h2>
+          <label class="visually-hidden" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+          <input class="form-contacts__field form__contacts__field--blue" type="tel" id="telephone"
+            placeholder="Введите телефон" required>
+          <p class="form-contacts__slogan">Электронная почта*:</p>
+          <label for="mail">
+            <input class="form-contacts__mail" type="email" placeholder="Введите e-mail" id="mail" required>
+          </label>
+        </div>
+        <fieldset class="form__block">
+          <legend class="form__block__title">Ваше Общее впечатление:</legend>
+          <ul class="form__block__list">
+            <li class="form__block__item">
+              <label class="form__block__control" for="catalog-radio-mark">
+                <input class="visually-hidden form__block__input-radio" type="radio" name="radio-button"
+                  value="Скорее положительное" id="catalog-radio-mark" checked><span
+                  class="form__block__input__radio"></span>Скорее положительное</label>
+            </li>
+            <li class="form__block__item">
+              <label class="form__block__control" for="radio-mark">
+                <input class="visually-hidden form__block__control__input-radio" type="radio" name="radio-button"
+                  value="Скорее отрицательное" id="radio-mark" checked><span class="form__block__radio"></span>Скорее
+                отрицательное</label>
+            </li>
+            <li class="form__block__item">
+              <label class="form__block__control" for="radio">
+                <input class="visually-hidden form__block__control__input-radio" type="radio" name="radio-button"
+                  value="Затрудняюсь ответить" id="radio" checked><span class="form__block__radio"></span>Затрудняюсь
+                ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="form__block__index">Посещенные достопримечательности:</legend>
+          <ul class="form__block__list">
+            <li class="form__block__list__item">
+              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+                for="catalog-control">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="bridge" id="catalog-control"
+                  checked><span class="form__block__list__item__label-control__mark"></span><span
+                  class="form__block__list__item__label-control__control-label">Мост Дьявола</span></label>
+            </li>
+            <li class="form__block__list__item">
+              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+                for="control">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="rock" id="control" checked><span
+                  class="form__block__list__item__label-control__mark"></span><span
+                  class="form__block__list__item__label-control__control-label">Гора-Колокол</span></label>
+            </li>
+            <li class="form__block__list__item">
+              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+                for="catalog-slide">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="slide-park" id="catalog-slide"
+                  checked><span class="form__block__list__item__label-control__mark"></span><span
+                  class="form__block__list__item__label-control__control-label">Слайд-парк</span></label>
+            </li>
+            <li class="form__block__list__item">
+              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+                for="catalog-control-mountain">
+                <input class="visually-hidden input-checkbox" type="checkbox" name="mountain"
+                  id="catalog-control-mountain"><span class="form__block__list__item__label-control__mark"></span><span
+                  class="form__block__list__item__label-control__control-label">Красные скалы</span></label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form-emotions">
+          <h2 class="form-emotions__title">Опишите свои эмоции:</h2>
+          <label class="visually-hidden" for="uname">В свободной форме</label>
+          <input class="form-emotions__text-name form-emotions__text-name--grey" type="text" id="uname" name="name"
+            placeholder="Опишите подробно все свои восторги " required>
+          <button class="form-emotions__submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="form-emotions__slogan">* — обязательные поля</p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="contacts">
+        <b class="contacts__title">#VISITSEDONA</b>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
