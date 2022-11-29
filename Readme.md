@@ -1,5 +1,4 @@
 # Личный проект «Седона» 
-sdsdcds
 * Студент: [Алексей Борзов](https://up.htmlacademy.ru/adaptive/27/user/2192931).
 * Наставник:  [Александр Лесухин](https://htmlacademy.ru/profile/caneklis)..
 
