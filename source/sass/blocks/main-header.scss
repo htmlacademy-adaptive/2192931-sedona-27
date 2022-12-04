@@ -1,0 +1,24 @@
+
+.main-header {
+  font-family: "ptsans";
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0 auto;
+}
+
+.main-header__wrapper {
+  margin: 0 40px 0 40px;
+}
+
+.main-nav__list__item__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-nav__list__item__link--active {
+  color: #766357;
+}

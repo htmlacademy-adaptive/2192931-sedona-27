@@ -1,0 +1,16 @@
+.catalog {
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.catalog__list__item__item,
+.catalog__list__item {
+  list-style-type: none;
+}
+
+.catalog__list__item__title {
+  text-transform: uppercase;
+}

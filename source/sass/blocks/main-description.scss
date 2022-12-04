@@ -1,0 +1,36 @@
+.main-description {
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin: 0 40px 0 40px;
+}
+
+
+.main-description__item {
+  list-style-type: none;
+  opacity: 0.8;
+}
+
+.main-description__slogan {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.main-description__slogan--grey {
+  color: #333333;
+}
+
+.main-description__item--blue {
+  background: #81B3D2;
+}
+
+.main-description__item--grey {
+  background: #EEEEEE;
+  color: #000000;
+}
+
