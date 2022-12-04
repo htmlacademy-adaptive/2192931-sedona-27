@@ -1,0 +1,23 @@
+.description-catalog {
+  width: 1200px;
+  min-height: 518px;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-image: url("../img/back-desktop.jpg");
+  text-transform: uppercase;
+  margin: 0 40px 0 40px;
+}
+
+.description-catalog::before {
+  content: url("../img/text-sedona.svg");
+}
+
+.description-catalog__slogan {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
