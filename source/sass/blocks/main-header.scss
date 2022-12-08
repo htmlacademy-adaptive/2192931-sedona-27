@@ -1,6 +1,9 @@
 
 .main-header {
-  font-family: "ptsans";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "ptsans", sans-serif;
   color: #FFFFFF;
   text-transform: uppercase;
   font-style: normal;
@@ -8,10 +11,23 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0 auto;
+  width: 320px;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 67px;
+  right: 67px;
+  height: 96px;
 }
 
 .main-header__wrapper {
-  margin: 0 40px 0 40px;
+  margin: 0;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__list__item__link {
@@ -22,3 +38,4 @@
 .main-nav__list__item__link--active {
   color: #766357;
 }
+

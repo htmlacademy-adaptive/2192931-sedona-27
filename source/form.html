@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./sass/style.scss">
   <link rel="stylesheet" href="./css/style.css">
@@ -18,13 +19,13 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__list__item">
-          <a class="main-nav__list__item__link">Главная</a>
+          <a class="main-nav__list__item__link" href="./index.html">Главная</a>
         </li>
         <li class="main-nav__list__item">
-          <a class="main-nav__list__item__link" href="photo.html">Фото и видео</a>
+          <a class="main-nav__list__item__link" href="./catalog.html">Фото и видео</a>
         </li>
         <li class="main-nav__list__item">
-          <a class="main-nav__list__item__link main-nav__list__item__link--active" href="#">Форма отзыва</a>
+          <a class="main-nav__list__item__link main-nav__list__item__link--active" href="./form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__list__item">
           <a class="main-nav__list__item__link" href="#">HTML Academy</a>
@@ -45,6 +46,7 @@
     </section>
     <section class="form">
       <form class="form__form" action="#" method="post">
+        <div class="form__wrapper">
         <div class="form__block">
           <h2 class="form__block-title">Представьтесь:</h2>
           <label class="visually-hidden" for="field">ИМЯ*:</label>
@@ -66,9 +68,10 @@
             <input class="form-contacts__mail" type="email" placeholder="Введите e-mail" id="mail" required>
           </label>
         </div>
+        </div>
         <fieldset class="form__block">
           <legend class="form__block__title">Ваше Общее впечатление:</legend>
-          <ul class="form__block__list">
+          <ul class="form__block__list form__block__list--radio">
             <li class="form__block__item">
               <label class="form__block__control" for="catalog-radio-mark">
                 <input class="visually-hidden form__block__input-radio" type="radio" name="radio-button"
@@ -91,7 +94,7 @@
         </fieldset>
         <fieldset class="form__block">
           <legend class="form__block__index">Посещенные достопримечательности:</legend>
-          <ul class="form__block__list">
+          <ul class="form__block__list form__block__list--checkbox">
             <li class="form__block__list__item">
               <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
                 for="catalog-control">
@@ -127,8 +130,10 @@
           <label class="visually-hidden" for="uname">В свободной форме</label>
           <input class="form-emotions__text-name form-emotions__text-name--grey" type="text" id="uname" name="name"
             placeholder="Опишите подробно все свои восторги " required>
+            <div class="form-emotions__wrapper">
           <button class="form-emotions__submit" type="submit">Отправить отзыв</button>
           <p class="form-emotions__slogan">* — обязательные поля</p>
+            </div>
         </div>
       </form>
     </section>

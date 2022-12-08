@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./sass/style.scss">
   <link rel="stylesheet" href="./css/style.css">
@@ -16,7 +17,7 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__list__item main-nav__list__item--active">
-          <a class="main-nav__list__item__link main-nav__list__item__link--active">Главная</a>
+          <a class="main-nav__list__item__link main-nav__list__item__link--active" href="./index.html">Главная</a>
         </li>
         <li class="main-nav__list__item">
           <a class="main-nav__list__item__link" href="photo.html">Фото и видео</a>
@@ -33,7 +34,6 @@
   </header>
   <main class="page-main">
     <section class="description description--inner">
-      
       <div class="description__wrapper">
         <h1 class="description__title">Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
         <p class="description__slogan">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -47,7 +47,9 @@
           <h2 class="main-description__title">Настоящий<br> городок</h2>
           <p class="main-description__slogan">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
           </div>
-          <img class="main-description__image" src="img/photo-city.jpg" width="512" height="256" alt="Фрагмент города">
+          <img class="main-description__image" src="img/city-mobile.jpg" width="320" height="260" alt="Фрагмент города">
+        </li>
+        <li class="main-description__item">
           <ul class="attractions">
             <li class="attractions__item attractions__item--housing">
               <h3 class="attractions__title">Жилье</h3>
@@ -64,21 +66,27 @@
           </ul>
         </li>
         <li class="main-description__item main-description__item--blue">
-          <img class="main-description__image" src="img/bridge.jpg" width="512" height="256" alt="Фрагмент каньона">
+          <img class="main-description__image" src="img/mountain-mobile.png" width="320" height="260" alt="Фрагмент каньона">
+          <div class="main-description__text">
           <h2 class="main-description__title">Там есть<br> мост дьявола</h2>
           <p class="main-description__slogan">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+          </div>
         </li>
-        <li class="main-description__item main-description__item--grey">
-          <h3 class="main-description__title">Небольшая<br> площадь</h3>
-          <p class="main-description__slogan main-description__slogan--grey">Все интересные места находятся очень<br> близко</p>
+        <li class="main-description__item">
+          <ul class="advantages">
+        <li class="advantages__item advantages__item--grey">
+          <h3 class="advantages__title">Небольшая<br> площадь</h3>
+          <p class="advantages__slogan advantages__slogan--grey">Все интересные места находятся очень<br> близко</p>
         </li>
-        <li class="main-description__item main-description__item--grey">
-          <h3 class="main-description__title">Красивая<br> дорога</h3>
-          <p class="main-description__slogan main-description__slogan--grey">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+        <li class="advantages__item advantages__item--grey">
+          <h3 class="advantages__title">Красивая<br> дорога</h3>
+          <p class="advantages__slogan advantages__slogan--grey">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
         </li>
-        <li class="main-description__item main-description__item--grey">
-          <h3 class="main-description__title">Мало<br> туристов</h3>
-          <p class="main-description__slogan main-description__slogan--grey">Большинство едет в гранд каньон и<br> толпится там</p>
+        <li class="advantages__item advantages__item--grey">
+          <h3 class="advantages__title">Мало<br> туристов</h3>
+          <p class="advantages__slogan advantages__slogan--grey">Большинство едет в гранд каньон и<br> толпится там</p>
+        </li>
+          </ul>
         </li>
       </ul>
     </section>
@@ -88,7 +96,7 @@
         <p class="order__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           седоне</p>
         <a class="order__link button" href="#">Найти гостиницу</a>
-          <img class="order__card-image" src="img/card.jpg" width="768" height="350" alt="Карта">
+          <img class="order__card-image" src="img/map-mobile.png" width="320" height="350" alt="Карта">
       </div>
     </section>
   </main>

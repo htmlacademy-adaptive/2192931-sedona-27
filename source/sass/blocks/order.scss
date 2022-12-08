@@ -2,15 +2,20 @@
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  margin: 0 40px 0 40px;
+  margin: 0 auto;
+}
 
-  .order__text {
-    color: #333333;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-  }
+.order__wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.order__text {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }

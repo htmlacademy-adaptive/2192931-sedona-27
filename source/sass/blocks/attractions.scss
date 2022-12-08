@@ -1,23 +1,21 @@
 .attractions {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  padding: 0;
+  margin: 0;
+}
 
-  .attractions__item {
-    list-style-type: none;
+.attractions__item {
+  list-style-type: none;
+}
 
-
-
-    .attractions__description {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 21px;
-      color: #333333;
-      }
-    }
-  }
-
-
+.attractions__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}

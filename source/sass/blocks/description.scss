@@ -1,18 +1,28 @@
 .description {
-  width: 1200px;
+  width: 320px;
   min-height: 518px;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
   text-transform: uppercase;
-  margin: 0 40px 0 40px;
+  margin: 0 auto;
+}
+
+.description__wrapper {
+  margin: 0;
+}
+
+.main-description__list {
+  padding: 0;
+  margin: 0;
 }
 
 .description::before {
-  content: url("../img/text-index.svg");
+  content: url("../img/text-mobile.svg");
 }
 
 .description__slogan {
@@ -21,8 +31,3 @@
   font-size: 14px;
   line-height: 21px;
 }
-
-
-
-
-

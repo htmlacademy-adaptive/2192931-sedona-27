@@ -1,14 +1,14 @@
 .photo-block {
+  width: 320px;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/back-desktop-mobile.png");
   background-repeat: no-repeat;
 }
-
 
 .photo-block__slogan {
   color: #333333;
@@ -18,5 +18,5 @@
 }
 
 .photo-block::before {
-  content: url("../img/text-sedona.svg");
+  content: url("../img/mobile-sedona.svg");
 }

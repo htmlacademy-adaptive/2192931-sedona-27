@@ -5,6 +5,14 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  }
+
+.form__block {
+  margin: 0;
+  padding: 0;
 }
 
 .form__block__field::placeholder {
@@ -28,6 +36,7 @@
   background: #F2F2F2;
   border: none;
 }
+
 
 .form-contacts__slogan {
   font-weight: 400;

@@ -1,4 +1,5 @@
 .main-description {
+  width: 320px;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   text-transform: uppercase;
@@ -6,22 +7,28 @@
   font-size: 21px;
   line-height: 26px;
   color: #FFFFFF;
-  margin: 0 40px 0 40px;
+  margin: 0 auto;
 }
 
+.advantages {
+  padding: 0;
+  margin:0;
+}
 
+.advantages__item,
 .main-description__item {
   list-style-type: none;
   opacity: 0.8;
 }
 
+.advantages__slogan,
 .main-description__slogan {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
 
-.main-description__slogan--grey {
+.advantages__slogan--grey {
   color: #333333;
 }
 
@@ -29,7 +36,7 @@
   background: #81B3D2;
 }
 
-.main-description__item--grey {
+.advantages__item--grey {
   background: #EEEEEE;
   color: #000000;
 }
