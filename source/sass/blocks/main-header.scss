@@ -2,6 +2,7 @@
 .main-header {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   font-family: "ptsans", sans-serif;
   color: #FFFFFF;

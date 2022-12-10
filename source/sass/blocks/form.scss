@@ -8,47 +8,6 @@
   margin: 0;
   padding: 0;
   width: 320px;
-  }
-
-.form__block {
-  margin: 0;
-  padding: 0;
-}
-
-.form__block__field::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.form-contacts__mail::placeholder,
-.form-contacts__field::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-
-}
-
-.form-contacts__mail,
-.form-contacts__field {
-  background: #F2F2F2;
-  border: none;
-}
-
-
-.form-contacts__slogan {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-}
-
-
-.form__block__field {
-  background: #F2F2F2;
-  border: none;
 }
 
 .visually-hidden {

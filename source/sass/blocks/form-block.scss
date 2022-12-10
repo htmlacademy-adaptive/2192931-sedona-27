@@ -1,0 +1,22 @@
+.form-block {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-block__list__item__label-control,
+.form-block__control {
+  text-transform:none;
+}
+
+.form-block__field::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form-block__field {
+  background: #F2F2F2;
+  border: none;
+}

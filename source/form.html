@@ -47,81 +47,84 @@
     <section class="form">
       <form class="form__form" action="#" method="post">
         <div class="form__wrapper">
-        <div class="form__block">
-          <h2 class="form__block-title">Представьтесь:</h2>
-          <label class="visually-hidden" for="field">ИМЯ*:</label>
-          <input class="form__block__field form__block__field--blue" type="text" id="field" placeholder="Петр" required>
-          <label class="visually-hidden" for="empty">ФАМИЛИЯ*:</label>
-          <input class="form__block__field form__block__field--blue" type="text" id="empty" placeholder="Пустота"
+        <div class="form-dates">
+          <h2 class="form-dates__title">Представьтесь:</h2>
+          <label class="form-dates__label" for="field">ИМЯ*:
+          <input class="form-dates__field form-dates__field--blue" type="text" id="field" placeholder="Петр" required>
+          </label>
+          <label class="form-dates__label" for="empty">ФАМИЛИЯ*:
+          <input class="form-dates__field form-dates__field--blue" type="text" id="empty" placeholder="Пустота"
             required>
-          <label class="visually-hidden" for="surname">ОТЧЕСТВО:</label>
-          <input class="form__block__field form__block__field--blue" type="text" id="surname" placeholder="Викторович"
+          </label>
+          <label class="form-dates__label" for="surname">ОТЧЕСТВО:
+          <input class="form-dates__field form-dates__field--blue" type="text" id="surname" placeholder="Викторович"
             required>
+          </label>
         </div>
         <div class="form-contacts">
           <h2 class="form-contacts__title">Контактная информация</h2>
-          <label class="visually-hidden" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+          <label class="form-contacts__label" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:
           <input class="form-contacts__field form__contacts__field--blue" type="tel" id="telephone"
             placeholder="Введите телефон" required>
-          <p class="form-contacts__slogan">Электронная почта*:</p>
-          <label for="mail">
+          </label>
+          <label class="form-contacts__label" for="mail">Электронная почта*:</p>
             <input class="form-contacts__mail" type="email" placeholder="Введите e-mail" id="mail" required>
           </label>
         </div>
         </div>
-        <fieldset class="form__block">
-          <legend class="form__block__title">Ваше Общее впечатление:</legend>
-          <ul class="form__block__list form__block__list--radio">
-            <li class="form__block__item">
-              <label class="form__block__control" for="catalog-radio-mark">
-                <input class="visually-hidden form__block__input-radio" type="radio" name="radio-button"
+        <fieldset class="form-block">
+          <legend class="form-block__title">Ваше Общее впечатление:</legend>
+          <ul class="form-block__list form-block__list--radio">
+            <li class="form-block__item">
+              <label class="form-block__control" for="catalog-radio-mark">
+                <input class="visually-hidden form-block__input-radio" type="radio" name="radio-button"
                   value="Скорее положительное" id="catalog-radio-mark" checked><span
-                  class="form__block__input__radio"></span>Скорее положительное</label>
+                  class="form-block__input__radio"></span>Скорее положительное</label>
             </li>
-            <li class="form__block__item">
-              <label class="form__block__control" for="radio-mark">
-                <input class="visually-hidden form__block__control__input-radio" type="radio" name="radio-button"
-                  value="Скорее отрицательное" id="radio-mark" checked><span class="form__block__radio"></span>Скорее
+            <li class="form-block__item">
+              <label class="form-block__control" for="radio-mark">
+                <input class="visually-hidden form-block__control__input-radio" type="radio" name="radio-button"
+                  value="Скорее отрицательное" id="radio-mark" checked><span class="form-block__radio"></span>Скорее
                 отрицательное</label>
             </li>
-            <li class="form__block__item">
-              <label class="form__block__control" for="radio">
-                <input class="visually-hidden form__block__control__input-radio" type="radio" name="radio-button"
-                  value="Затрудняюсь ответить" id="radio" checked><span class="form__block__radio"></span>Затрудняюсь
+            <li class="form-block__item">
+              <label class="form-block__control" for="radio">
+                <input class="visually-hidden form-block__control__input-radio" type="radio" name="radio-button"
+                  value="Затрудняюсь ответить" id="radio" checked><span class="form-block__radio"></span>Затрудняюсь
                 ответить</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__block">
-          <legend class="form__block__index">Посещенные достопримечательности:</legend>
-          <ul class="form__block__list form__block__list--checkbox">
-            <li class="form__block__list__item">
-              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+        <fieldset class="form-block">
+          <legend class="form-block__index">Посещенные достопримечательности:</legend>
+          <ul class="form-block__list form-block__list--checkbox">
+            <li class="form-block__list__item">
+              <label class="form-block__list__item__label-control form-block__list__item__label-control--checkbox"
                 for="catalog-control">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="bridge" id="catalog-control"
-                  checked><span class="form__block__list__item__label-control__mark"></span><span
-                  class="form__block__list__item__label-control__control-label">Мост Дьявола</span></label>
+                  checked><span class="form-block__list__item__label-control__mark"></span><span
+                  class="form-block__list__item__label-control__control-label">Мост Дьявола</span></label>
             </li>
-            <li class="form__block__list__item">
-              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+            <li class="form-block__list__item">
+              <label class="form-block__list__item__label-control form-block__list__item__label-control--checkbox"
                 for="control">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="rock" id="control" checked><span
-                  class="form__block__list__item__label-control__mark"></span><span
-                  class="form__block__list__item__label-control__control-label">Гора-Колокол</span></label>
+                  class="form-block__list__item__label-control__mark"></span><span
+                  class="form-block__list__item__label-control__control-label">Гора-Колокол</span></label>
             </li>
-            <li class="form__block__list__item">
-              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+            <li class="form-block__list__item">
+              <label class="form-block__list__item__label-control form-block__list__item__label-control--checkbox"
                 for="catalog-slide">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="slide-park" id="catalog-slide"
-                  checked><span class="form__block__list__item__label-control__mark"></span><span
-                  class="form__block__list__item__label-control__control-label">Слайд-парк</span></label>
+                  checked><span class="form-block__list__item__label-control__mark"></span><span
+                  class="form-block__list__item__label-control__control-label">Слайд-парк</span></label>
             </li>
-            <li class="form__block__list__item">
-              <label class="form__block__list__item__label-control form__block__list__item__label-control--checkbox"
+            <li class="form-block__list__item">
+              <label class="form-block__list__item__label-control form-block__list__item__label-control--checkbox"
                 for="catalog-control-mountain">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="mountain"
-                  id="catalog-control-mountain"><span class="form__block__list__item__label-control__mark"></span><span
-                  class="form__block__list__item__label-control__control-label">Красные скалы</span></label>
+                  id="catalog-control-mountain"><span class="form-block__list__item__label-control__mark"></span><span
+                  class="form-block__list__item__label-control__control-label">Красные скалы</span></label>
             </li>
           </ul>
         </fieldset>
