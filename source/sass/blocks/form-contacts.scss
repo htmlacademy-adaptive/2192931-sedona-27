@@ -5,6 +5,20 @@
   margin: 0;
 }
 
+@media (min-width: $desktop-width) {
+  .form-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .form-contacts__mail::placeholder,
 .form-contacts__field::placeholder {
   font-weight: 700;

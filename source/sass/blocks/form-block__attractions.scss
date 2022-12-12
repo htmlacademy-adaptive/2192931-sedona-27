@@ -1,10 +1,9 @@
-
-.form-block {
+.form-block__attractions {
   border: none;
 }
 
 @media (min-width: $tablet-width) {
-  .form-block__list {
+  .form-block__attractions__list {
     @include list-reset;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,26 +12,26 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-block__list {
+  .form-block__attractions__list {
     @include list-reset;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-wrap: wrap;
   }
 }
 
-.form-block__control {
+.form-block__attractions__list__item__label-control {
   text-transform:none;
 }
 
-.form-block__field::placeholder {
+.form-block__attractions__field::placeholder {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-.form-block__field {
+.form-block__attractions__field {
   background: #F2F2F2;
   border: none;
 }

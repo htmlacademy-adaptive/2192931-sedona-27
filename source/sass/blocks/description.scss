@@ -1,19 +1,44 @@
 .description {
-  width: 320px;
-  min-height: 518px;
+  display: grid;
+  grid-template-rows: 389px max-content;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 21px;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #E6E6E6;
   text-transform: uppercase;
   margin: 0 auto;
 }
 
 .description__wrapper {
+  margin-top: auto;
+  background-color: #FFFFFF;
+}
+
+@media (min-width: $tablet-width) {
+  .description__wrapper {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.description__title {
+  padding: 32px 18px 35px 18px;
+  text-align: center;
+  line-height: 26px;
   margin: 0;
+}
+
+.description__image {
+  margin: auto;
 }
 
 .description__slogan {
@@ -21,4 +46,25 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  text-align: center;
+  padding: 0 18px 32px 18px;
+}
+
+.description__item {
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    background-image: url("../img/back-desktop.jpg");
+    grid-template-rows: 518px max-content;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    background-image: url("../img/back-desktop.jpg");
+  }
 }

@@ -1,13 +1,51 @@
 .photo-block {
-  width: 320px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 158px max-content;
+  width: 100%;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  background-image: url("../img/back-desktop-mobile.png");
+  background-image: url("../img/catalog-mobile-desktop.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-block {
+    background-image: url("../img/back-desktop-tablet.jpg");
+    grid-template-rows: 290px max-content;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-block {
+    background-image: url("../img/back-desktop-tablet.jpg");
+    grid-template-rows: 290px max-content;
+  }
+}
+
+.photo-block__wrapper {
+  text-align: center;
+  margin: 0;
+  padding: 37px 20px 50px 20px;
+  margin-top: auto;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-block__wrapper {
+    padding: 66px 155px 67px 155px;
+  }
+}
+
+.photo-block__image {
+  margin: auto;
 }
 
 .photo-block__slogan {
@@ -15,8 +53,4 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-}
-
-.photo-block::before {
-  content: url("../img/mobile-sedona.svg");
 }

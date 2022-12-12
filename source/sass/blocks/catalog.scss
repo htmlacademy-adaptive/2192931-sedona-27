@@ -1,23 +1,108 @@
 .catalog {
-  width: 320px;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin: 0 auto;
 }
 
 .catalog__list {
-  width: 320px;
-  padding: 0;
-  margin: 0;
+  @include list-reset;
 }
 
 .catalog__list__item {
   list-style-type: none;
+  grid-column: 1 / -1;
 }
 
 .catalog__list__item__title {
   text-transform: uppercase;
+  margin: 0;
+  text-align: left;
+  padding: 15px 125px 11px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  width: 100%;
+}
+
+.catalog__list__item__image {
+  flex-grow: 1;
+  display: block;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list__item__image {
+    background-image: url("../img/road-tablet.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list__item__image--vegetation {
+    background-image: url("../img/vegetetion-tablet.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    @include list-reset;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list__item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list__item:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list__item:nth-child(1) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list__item:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    @include list-reset;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list__item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list__item:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list__item:nth-child(4) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
 }

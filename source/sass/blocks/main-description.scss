@@ -1,20 +1,126 @@
 .main-description {
-  width: 320px;
-  font-family: "ptsans", sans-serif;
-  font-style: normal;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  color: #FFFFFF;
-  margin: 0 auto;
+  font-style: normal;
+}
+
+.main-description__slogan {
+ 
+  margin: 0;
+  padding: 0 18px 40px 18px;
+  text-align: center;
+}
+
+.main-description__slogan--grey {
+  color: #333333;
+}
+
+.main-description__item--grey {
+  background: #EEEEEE;
+  color: #000000;
+  text-align: center
 }
 
 .main-description__list {
-  padding: 0;
-  margin: 0;
+  @include list-reset;
 }
 
 .main-description__item--blue {
   background: #81B3D2;
+  color: #FFFFFF;
 }
+
+.main-description__title {
+  @include block-title;
+  padding: 54px 18px 49px 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.main-description__item__slogan {
+  margin: 0;
+}
+
+.main-description__text {
+  min-height: 118px;
+  padding: 24px 26px 24px 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__text {
+    padding: 52px 33px 31px 33px;
+  }
+}
+
+.main-catalog-text {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog-container,
+  .main-description {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog-container,
+  .main-description {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item--blue {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__item--blue {
+    display: flex;
+    flex-wrap: wrap;
+
+    .main-description__text {
+      width: calc(100% / 3);
+      padding: 52px 50px 51px 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__list {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+}
+
+.main-description__item {
+    margin: 0; 
+
+  &--blue {
+    grid-column: 1 / -1;
+    //width: 100%;
+  }
+}
+
+.main-description__image {
+  //width: calc(100% - 100% / 3);
+  flex-grow: 1;
+  display: block;
+  object-fit: cover;
+}
+

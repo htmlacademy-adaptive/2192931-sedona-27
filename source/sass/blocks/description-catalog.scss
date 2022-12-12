@@ -1,6 +1,6 @@
 .description-catalog {
-  width: 320;
-  min-height: 518px;
+  display: grid;
+  grid-template-rows: 389px max-content;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -8,12 +8,21 @@
   line-height: 26px;
   background-image: url("../img/back-desktop-mobile.png");
   background-repeat: no-repeat;
+  background-size: 100%;
   text-transform: uppercase;
-  margin: 0 auto;
+  background-color: #E6E6E6;
 }
 
-.description-catalog::before {
-  content: url("../img/mobile-sedona.svg");
+@media (min-width: $tablet-width) {
+  .description-catalog {
+    background-image: url("../img/back-tablet-form.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog {
+    background-image: url("../img/back-desktop-form.jpg");
+  }
 }
 
 .description-catalog__slogan {
