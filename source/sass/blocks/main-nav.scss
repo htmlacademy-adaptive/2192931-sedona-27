@@ -4,7 +4,21 @@
 
 .main-nav__list__item__link {
   text-decoration: none;
-  color: #000000;
+  color: #FFFFFF;
+  padding: 10px 83px 12px 83px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list__item__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 17px ;
+    color: #000000;
+    width: 100%;
+  }
 }
 
 .main-nav__list__item__link--active {
@@ -33,16 +47,28 @@
   }
 }
 
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 100%;
+    display: none;
   }
+}
+
+.main-nav__list__item {
+  background-color: #81B3D2;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__list__item {
     width: 153px;
     text-align: center;
+    background-color: #FFFFFF;
 
     &:nth-child(2) {
       margin-right: auto;
