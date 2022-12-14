@@ -616,7 +616,40 @@ img {
 
 @media (min-width: 768px) {
   .catalog__list__item {
-    background-color: #f2f2f2;
+    background-color: #EAEAEA;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog__list__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .catalog__list__item__text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog__list__item__text {
+    margin-top: -75px;
+    color: #FFFFFF;
+  }
+}
+@media (min-width: 768px) {
+  .catalog__list__item__title {
+    padding: 22px auto 15px 20px;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+}
+@media (min-width: 768px) {
+  .catalog__list__item__slogan {
+    grid-column: 1/-1;
+    grid-row: 2/-2;
   }
 }
 .catalog__list__item__title {
@@ -632,10 +665,27 @@ img {
 
 .catalog__list__item__button {
   text-align: left;
-  padding: 0 239px 25px 20px;
+  padding: 11px 239px 25px 20px;
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .catalog__list__item__button {
+    padding: 28px 20px 27px 20px;
+    text-align: right;
+    grid-column: 2/-2;
+    grid-row: 1/-1;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog__list__item__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: rgba(28, 28, 28, 0);
+    color: #FFFFFF;
+  }
+}
 .catalog__list__item__slogan {
   margin: 0;
   text-align: left;
@@ -980,9 +1030,22 @@ img {
 
 .main-nav__list__item__link {
   text-decoration: none;
-  color: #000000;
+  color: #FFFFFF;
+  padding: 10px 83px 12px 83px;
+  text-align: center;
+  width: 100%;
 }
 
+@media (min-width: 768px) {
+  .main-nav__list__item__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 17px;
+    color: #000000;
+    width: 100%;
+  }
+}
 .main-nav__list__item__link--active {
   color: #766357;
 }
@@ -1009,12 +1072,23 @@ img {
 @media (min-width: 768px) {
   .main-nav {
     width: 100%;
+    display: none;
   }
 }
+.main-nav__list__item {
+  background-color: #81B3D2;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .main-nav__list__item {
     width: 153px;
     text-align: center;
+    background-color: #FFFFFF;
   }
   .main-nav__list__item:nth-child(2) {
     margin-right: auto;
