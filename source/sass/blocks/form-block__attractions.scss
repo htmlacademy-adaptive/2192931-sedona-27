@@ -1,37 +1,93 @@
-.form-block__attractions {
+.attractions-container {
+  text-align: center;
   border: none;
+  padding: 0;
+  margin-bottom: 49px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.attractions-container__item {
+  margin-bottom: 20px;
+  padding: 10px 0 10px 62px;
 }
 
 @media (min-width: $tablet-width) {
-  .form-block__attractions__list {
-    @include list-reset;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
+  .attractions-container__item {
+    padding: 17px 28px 17px 0;
+    margin-bottom: 0;
+  }
+}
+
+.attractions-container__label-control {
+  padding-left: 46px;
+  width: 218px;
+  text-transform: none;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions-container__label-control {
+    padding: 10px 0 10px 62px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .attractions-container {
+    margin-bottom: 48px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form-block__attractions__list {
+  .attractions-container {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 56px;
+  }
+}
+
+.attractions-container__list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions-container__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions-container__list {
     @include list-reset;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-wrap: wrap;
+    text-align: center;
   }
 }
 
-.form-block__attractions__list__item__label-control {
-  text-transform:none;
-}
-
-.form-block__attractions__field::placeholder {
+.attractions-container__field::placeholder {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-.form-block__attractions__field {
-  background: #F2F2F2;
+.attractions-container__field {
+  background: #f2f2f2;
   border: none;
+}
+
+.attractions-container-index {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions-container-index {
+    font-size: 21px;
+  }
 }

@@ -1,9 +1,14 @@
 .form-emotions__text-name {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
+  width: 100%;
+  min-height: 160px;
 }
 
 .form-emotions__text-name::placeholder {
+  @include block-title;
+  padding-top: 16px;
+  padding-left: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -14,19 +19,39 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .form-emotions__slogan {
+    margin: 16px 0 16px 0;
+  }
+}
+
+.form-emotions {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .form-emotions {
     flex-wrap: wrap;
     flex-direction: column;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-emotions {
+    margin-left: 216px;
+    margin-right: 216px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
   }
 }
 
@@ -34,6 +59,7 @@
   .form-emotions__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -41,5 +67,19 @@
   .form-emotions__wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.form-emotions__title {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-emotions__title {
+    margin-bottom: 28px;
+    font-size: 21px;
   }
 }

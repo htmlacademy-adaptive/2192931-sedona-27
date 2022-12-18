@@ -1,4 +1,3 @@
-
 .main-footer {
   font-family: "ptsans", sans-serif;
   font-style: normal;
@@ -10,6 +9,11 @@
   margin-right: 40px;
   margin-left: 40px;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  overflow: hidden;
+  display: none;
 }
 
 .main-footer__wrapper {
@@ -58,13 +62,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 6px;
 }
 
 @media (min-width: $desktop-width) {
-.main-footer__social {
-  padding: 36px 0 36px 0;
-  margin: 0;
-}
+  .main-footer__social {
+    padding: 36px 0 36px 0;
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -75,7 +80,7 @@
 }
 
 .main-footer__link {
-  margin: 28px 77px 33px 77px; 
+  margin: 28px 77px 33px 77px;
   text-align: center;
   font-weight: 700;
   font-size: 21px;
@@ -96,19 +101,72 @@
 }
 
 .main-footer__copyright {
-  margin: 40px 96px 22px 96px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 96px 22px 96px;
   text-align: center;
+  gap: 12px;
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__copyright {
-    padding: 43px 136px 42px 256px;
+    padding: 43px 0 42px 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__copyright {
-    padding: 43px 76px 42px 100px;
+    padding: 43px 0 42px 0;
     margin: 0;
   }
+}
+
+.main-footer__social__link {
+  background-color: #81b3d2;
+  background-size: 24px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.main-footer__social__link:hover {
+  background-color: #669ec0;
+}
+
+.main-footer__social__link:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer__social__item {
+  display: inline-block;
+}
+
+.main-footer__social__link--vkontakte {
+  background-image: url("../img/vkontakte.svg");
+}
+
+.main-footer__social__link--telegram {
+  background-image: url("../img/telegram.svg");
+}
+
+.main-footer__social__link--youtube {
+  background-image: url("../img/youtube.svg");
+}
+
+.copyright__link {
+  background-image: url("../img/htmlacademy.svg");
+  background-position: center;
+  display: block;
+  width: 27px;
+  height: 32px;
+}
+
+.copyright__text {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }

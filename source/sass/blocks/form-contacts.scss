@@ -25,15 +25,15 @@
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
-
 }
 
 .form-contacts__mail,
 .form-contacts__field {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
+  padding: 16px 0 16px 16px;
+  width: 100%;
 }
-
 
 .form-contacts__slogan {
   font-weight: 400;
@@ -43,6 +43,40 @@
 }
 
 .form-contacts__label {
+  @include slogan-block;
   display: flex;
   flex-wrap: wrap;
+}
+
+.form-contacts__wrapper {
+  padding: 0 20px 49px 20px;
+}
+
+.form-contacts__title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts__title {
+    font-size: 21px;
+  }
+}
+
+.form-contacts__field {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts__wrapper {
+    padding: 0 60px 158px 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts__wrapper {
+    padding: 0 120px 166px 64px;
+  }
 }

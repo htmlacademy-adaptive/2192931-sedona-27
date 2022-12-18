@@ -1,14 +1,35 @@
-
 .form-block {
   border: none;
+  text-align: center;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-block {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-block {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
+
+.form-block__list {
+  @include list-reset;
+  margin: 0 20px 24px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .form-block__list {
-    @include list-reset;
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
+    text-align: left;
+    padding: 0;
   }
 }
 
@@ -18,11 +39,43 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.form-block__title {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-block__title {
+    font-size: 21px;
+    padding: 0 123px 0 123px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-block__title {
+    padding: 0;
+    margin-bottom: 28px;
   }
 }
 
 .form-block__control {
-  text-transform:none;
+  text-transform: none;
+  padding-left: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-block__control {
+    padding-left: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-block__control {
+    padding-left: 62px;
+  }
 }
 
 .form-block__field::placeholder {
@@ -33,6 +86,17 @@
 }
 
 .form-block__field {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border: none;
+}
+
+.form-block__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-block__item {
+    padding: 10px 0 10px 0;
+    width: 280px;
+  }
 }
