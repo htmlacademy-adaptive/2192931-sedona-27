@@ -24,6 +24,7 @@
 }
 
 .main-description__item--blue {
+  grid-column: 1 / -1;
   background: #81b3d2;
   color: #ffffff;
 }
@@ -108,11 +109,6 @@
 
 .main-description__item {
   margin: 0;
-
-  &--blue {
-    grid-column: 1 / -1;
-    //width: 100%;
-  }
 }
 
 .main-description__image {
