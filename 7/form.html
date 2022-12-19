@@ -20,13 +20,13 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__list__item">
-          <a class="main-nav__list__item__link" href="./index.html">Главная</a>
+          <a class="main-nav__list__item__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__list__item">
-          <a class="main-nav__list__item__link" href="./catalog.html">Фото и видео</a>
+          <a class="main-nav__list__item__link main-nav__list__item__link--active" href="catalog.html">Фото и видео</a>
         </li>
         <li class="main-nav__list__item">
-          <a class="main-nav__list__item__link main-nav__list__item__link--active" href="./form.html">Форма отзыва</a>
+          <a class="main-nav__list__item__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__list__item">
           <a class="main-nav__list__item__link" href="#">HTML Academy</a>
@@ -39,11 +39,13 @@
     <section class="description-catalog description--inner">
       <img class="description-catalog__image" src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
       <div class="description-catalog__container">
+        <div class="description-catalog__container__text">
       <h1 class="description-catalog__title">
         Оставьте свой отзыв
       </h1>
       <p class="description__slogan">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>
         а также о посещенных вами достопримечательностях</p>
+        </div>
       </div>
     </section>
     <section class="form">
@@ -51,6 +53,7 @@
         <div class="form__wrapper">
         <div class="form-dates">
           <h2 class="form-dates__title">Представьтесь:</h2>
+          <div class="form-dates__wrapper">
           <label class="form-dates__label" for="field">ИМЯ*:
           <input class="form-dates__field form-dates__field--blue" type="text" id="field" placeholder="Петр" required>
           </label>
@@ -62,9 +65,11 @@
           <input class="form-dates__field form-dates__field--blue" type="text" id="surname" placeholder="Викторович"
             required>
           </label>
+          </div>
         </div>
         <div class="form-contacts">
           <h2 class="form-contacts__title">Контактная информация</h2>
+        <div class="form-contacts__wrapper">
           <label class="form-contacts__label" for="telephone">КОНТАКТНЫЙ ТЕЛЕФОН*:
           <input class="form-contacts__field form__contacts__field--blue" type="tel" id="telephone"
             placeholder="Введите телефон" required>
@@ -72,6 +77,7 @@
           <label class="form-contacts__label" for="mail">Электронная почта*:</p>
             <input class="form-contacts__mail" type="email" placeholder="Введите e-mail" id="mail" required>
           </label>
+        </div>
         </div>
         </div>
         <fieldset class="form-block">
@@ -97,44 +103,44 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-block__attractions">
-          <legend class="form-block__attractions__index">Посещенные достопримечательности:</legend>
-          <ul class="form-block__attractions__list form-block__attractions__list--checkbox">
-            <li class="form-block__attractions__list__item">
-              <label class="form-block__attractions__list__item__label-control form-block__attractions__list__item__label-control--checkbox"
+        <fieldset class="attractions-container">
+          <legend class="attractions-container-index">Посещенные достопримечательности:</legend>
+          <ul class="attractions-container__list attractions-container__list--checkbox">
+            <li class="attractions-container__item">
+              <label class="attractions-container__label-control attractions-container__label-control--checkbox"
                 for="catalog-control">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="bridge" id="catalog-control"
-                  checked><span class="form-block__attractions__list__item__label-control__mark"></span><span
-                  class="form-block__attractions__list__item__label-control__control-label">Мост Дьявола</span></label>
+                  checked><span class="attractions-container__label-control__mark"></span><span
+                  class="attractions-container__control-label">Мост Дьявола</span></label>
             </li>
-            <li class="form-block__attractions__list__item">
-              <label class="form-block__attractions__list__item__label-control form-block__attractions__list__item__label-control--checkbox"
+            <li class="attractions-container__item">
+              <label class="attractions-container__label-control attractions-container__label-control--checkbox"
                 for="control">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="rock" id="control" checked><span
-                  class="form-block__attractions__list__item__label-control__mark"></span><span
-                  class="form-block__attractions__list__item__label-control__control-label">Гора-Колокол</span></label>
+                  class="attractions-container__label-control__mark"></span><span
+                  class="attractions-container__control-label">Гора-Колокол</span></label>
             </li>
-            <li class="form-block__attractions__list__item">
-              <label class="form-block__attractions__list__item__label-control form-block__attractions__list__item__label-control--checkbox"
+            <li class="attractions-container__item">
+              <label class="attractions-container__label-control attractions-container__label-control--checkbox"
                 for="catalog-slide">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="slide-park" id="catalog-slide"
-                  checked><span class="form-block__attractions__list__item__label-control__mark"></span><span
-                  class="form-block__attractions__list__item__label-control__control-label">Слайд-парк</span></label>
+                  checked><span class="attractions-container__label-control__mark"></span><span
+                  class="attractions-container__label-control__control-label">Слайд-парк</span></label>
             </li>
-            <li class="form-block__attractions__list__item">
-              <label class="form-block__attractions__list__item__label-control form-block__attractions__list__item__label-control--checkbox"
+            <li class="attractions-container__item">
+              <label class="attractions-container__label-control attractions-container__label-control--checkbox"
                 for="catalog-control-mountain">
                 <input class="visually-hidden input-checkbox" type="checkbox" name="mountain"
-                  id="catalog-control-mountain"><span class="form-block__attractions__list__item__label-control__mark"></span><span
-                  class="form-block__attractions__list__item__label-control__control-label">Красные скалы</span></label>
+                  id="catalog-control-mountain"><span class="attractions-container__label-control__mark"></span><span
+                  class="attractions-container__control-label">Красные скалы</span></label>
             </li>
           </ul>
         </fieldset>
         <div class="form-emotions">
           <h2 class="form-emotions__title">Опишите свои эмоции:</h2>
           <label class="visually-hidden" for="uname">В свободной форме</label>
-          <input class="form-emotions__text-name form-emotions__text-name--grey" type="text" id="uname" name="name"
-            placeholder="Опишите подробно все свои восторги " required>
+          <textarea class="form-emotions__text-name form-emotions__text-name--grey"  id="uname" name="name"
+            placeholder="Опишите подробно все свои восторги " required></textarea>
             <div class="form-emotions__wrapper">
           <button class="form-emotions__submit" type="submit">Отправить отзыв</button>
           <p class="form-emotions__slogan">* — обязательные поля</p>
@@ -149,23 +155,24 @@
       <div class="main-footer__social social">
         <ul class="main-footer__social__list">
           <li class="main-footer__social__item">
-            <a class="main-footer__social__link main-footer__social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="main-footer__social__link main-footer__social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="main-footer__social__item">
-            <a class="main-footer__social__link main-footer__social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="main-footer__social__link main-footer__social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме<span class="visually-hidden"></span></a>
           </li>
           <li class="main-footer__social__item">
-            <a class="main-footer__social__link main-footer__social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
+            <a class="main-footer__social__link main-footer__social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в
+              Ютубе</span></a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
