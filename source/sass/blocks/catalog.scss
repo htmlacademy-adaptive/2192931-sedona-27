@@ -33,7 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list-item {
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
   }
 }
 
@@ -67,7 +67,7 @@
   .catalog__list-item-text {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 22px 27px 15px 20px;
   }
 }
@@ -75,7 +75,6 @@
 @media (min-width: $tablet-width) {
   .catalog__list-item-title {
     padding: 22px auto 15px 20px;
-
   }
 }
 
@@ -93,7 +92,8 @@
 .catalog__list-item-button {
   text-align: left;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -110,8 +110,8 @@
 @media (min-width: $desktop-width) {
   .catalog__list-item-button {
     @include title-header;
-    background-color: rgba(28,28,28,0);
-    color: #FFFFFF;
+    background-color: rgba(28, 28, 28, 0);
+    color: #ffffff;
   }
 }
 

@@ -4,7 +4,6 @@
 }
 
 .main-description__slogan {
-
   margin: 0;
   padding: 0 18px 40px 18px;
   text-align: center;
@@ -15,9 +14,9 @@
 }
 
 .main-description__item--grey {
-  background: #EEEEEE;
+  background: #eeeeee;
   color: #000000;
-  text-align: center
+  text-align: center;
 }
 
 .main-description__list {
@@ -25,8 +24,8 @@
 }
 
 .main-description__item--blue {
-  background: #81B3D2;
-  color: #FFFFFF;
+  background: #81b3d2;
+  color: #ffffff;
 }
 
 .main-description__title {
@@ -36,7 +35,7 @@
   text-align: center;
 }
 
-.main-description__item__slogan {
+.main-description__item-slogan {
   margin: 0;
 }
 
@@ -93,7 +92,6 @@
 
 @media (min-width: $desktop-width) {
   .main-description__list {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
@@ -109,7 +107,7 @@
 }
 
 .main-description__item {
-    margin: 0;
+  margin: 0;
 
   &--blue {
     grid-column: 1 / -1;
@@ -122,4 +120,3 @@
   display: block;
   object-fit: cover;
 }
-

@@ -9,14 +9,14 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   text-transform: uppercase;
   margin: 0 auto;
 }
 
 .description__wrapper {
   margin-top: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -41,7 +41,7 @@
   margin: auto;
 }
 
-.description__slogan {
+.description-catalog__slogan {
   color: #333333;
   font-weight: 400;
   font-size: 14px;
