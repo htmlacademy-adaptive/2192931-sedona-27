@@ -15,17 +15,17 @@
     <a class="main-header__logo" href="#">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__list-item">
           <a class="main-nav__list-item-link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__list-item">
-          <a class="main-nav__list-item-link main-nav__list-item-link--active" href="catalog.html">Фото и видео</a>
+          <a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a>
         </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-item-link" href="form.html">Форма отзыва</a>
+        <li class="main-nav__list-item main-nav__list-item--active">
+          <a class="main-nav__list-item-link main-nav__list-item-link--active" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__list-item">
           <a class="main-nav__list-item-link" href="#">HTML Academy</a>
@@ -36,7 +36,9 @@
   </header>
   <main class="main-catalog-container">
     <section class="description-catalog description-catalog--inner">
+      <div class="description-catalog__wrapper">
       <img class="description-catalog__image" src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
+      </div>
       <div class="description-catalog__container">
         <div class="description-catalog__container__text">
       <h1 class="description-catalog__title">
