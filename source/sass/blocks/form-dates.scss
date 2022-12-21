@@ -1,0 +1,46 @@
+.form-dates {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.form-dates__label {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-dates__field {
+  @include block-title;
+  width: 100%;
+}
+
+.form-dates__field::placeholder {
+  color: #000000;
+}
+
+.form-dates__title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-dates__title {
+    font-size: 21px;
+  }
+}
+
+.form-dates__wrapper {
+  padding: 0 20px 39px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-dates__wrapper {
+    padding: 0 43px 63px 60px;
+  }
+}

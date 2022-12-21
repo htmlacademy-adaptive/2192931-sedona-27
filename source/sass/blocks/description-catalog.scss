@@ -1,18 +1,54 @@
 .description-catalog {
-  width: 1200px;
-  min-height: 518px;
+  display: grid;
+  grid-template-rows: 389px max-content;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/back-desktop-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   text-transform: uppercase;
-  margin: 0 40px 0 40px;
+  background-color: #e6e6e6;
+  margin: 0;
+  z-index: -1;
 }
 
-.description-catalog::before {
-  content: url("../img/text-sedona.svg");
+.description-catalog__wrapper {
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-rows: 389px max-content;
+  background-position-y: bottom;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__wrapper {
+    background-image: url("../img/intro-triangle-tablet.svg");
+    display: grid;
+    grid-template-rows: 389px max-content;
+    background-size: 100%;
+  }
+}
+
+.description-catalog__image {
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog {
+    background-image: url("../img/back-tablet-form.jpg");
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog {
+    background-image: url("../img/back-desktop-form.jpg");
+  }
 }
 
 .description-catalog__slogan {
@@ -20,4 +56,39 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  text-align: center;
+  padding: 0 18px 32px 18px;
+}
+
+.description-catalog__container {
+  background-color: #ffffff;
+}
+
+.description-catalog__container__text {
+  padding: 36px 20px 0 20px;
+  margin-bottom: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__container__text {
+    padding: 64px 166px 102px 166px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog__container__text {
+    padding: 115px 384px 67px 382px;
+  }
+}
+
+.description-catalog__title {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__title {
+    font-size: 30px;
+  }
 }

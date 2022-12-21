@@ -1,23 +1,35 @@
 .attractions {
-  background-color: #FFFFFF;
+  @include list-reset;
+  width: 100%;
+  background-color: #ffffff;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
 
-  .attractions__item {
-    list-style-type: none;
+.attractions__item {
+  list-style-type: none;
+  padding: 23px 18px 0 18px;
+}
 
+.attractions__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0;
+}
 
-
-    .attractions__description {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 21px;
-      color: #333333;
-      }
-    }
+@media (min-width: $tablet-width) {
+  .attractions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
   }
+}
 
-
+.attractions__item--souvenirs {
+  padding-bottom: 46px;
+}

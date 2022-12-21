@@ -1,28 +1,101 @@
+
 .description {
-  width: 1200px;
-  min-height: 518px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 389px max-content;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  background-image: url("../img/back-desktop.jpg");
+  font-size: 18px;
+  line-height: 21px;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #e6e6e6;
   text-transform: uppercase;
-  margin: 0 40px 0 40px;
+  margin: 0 auto;
+  z-index: -1;
 }
 
-.description::before {
-  content: url("../img/text-index.svg");
+.description__wrapper {
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  display: grid;
+  grid-template-rows: 389px max-content;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description__wrapper {
+    background-image: url("../img/intro-triangle-tablet.svg");
+    grid-template-rows: 518px max-content;
+    background-size: 100%;
+  }
+}
+
+.description__text {
+  padding: 32px 18px 35px 16px;
+  margin-top: auto;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .description__text {
+    padding: 47px 127px 55px 127px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__text {
+    padding: 59px 357px 44px 357px;
+  }
+}
+
+
+.description__title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.description__item {
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    background-image: url("../img/back-desktop.jpg");
+    grid-template-rows: 518px max-content;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    background-image: url("../img/back-desktop.jpg");
+    z-index: 1;
+  }
 }
 
 .description__slogan {
-  color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
+  margin: 0;
+  padding-top: 35px;
 }
 
-
-
-
-
+.description__image {
+  margin: auto;
+}

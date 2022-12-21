@@ -3,8 +3,39 @@
   font-style: normal;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.video__text {
+  margin: 0;
+  text-align: center;
+  padding: 17px 26px 38px 26px;
+}
+
+.video__title {
+  margin: 0;
+}
+
+.video__video-image {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    margin-right: 60px;
+    margin-left: 60px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .video__slogan {
@@ -12,4 +43,5 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 0;
 }
