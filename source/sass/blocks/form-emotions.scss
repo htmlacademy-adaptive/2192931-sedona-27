@@ -83,3 +83,39 @@
     font-size: 21px;
   }
 }
+
+.form-emotions__submit {
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 16px 40px 16px 40px;
+  margin-bottom: 3px;
+}
+
+.form-emotions__submit:hover {
+  background-color: #669ec0;
+}
+
+.form-emotions__submit:focus {
+  background-color: #5496bd;
+}
+
+@media (min-width: $tablet-width) {
+  .form-emotions__submit {
+    padding: 16px 71px 16px 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__submit {
+    padding: 16px 101px 16px 101px;
+  }
+}

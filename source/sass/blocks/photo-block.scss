@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #e6e6e6;
-  z-index: -1;
   margin: 0 auto;
 }
 
@@ -30,6 +29,13 @@
 @media (min-width: $tablet-width) {
   .photo-block__wrapper {
     background-image: url("../img/intro-triangle-tablet.svg");
+    grid-template-rows: 290px max-content;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-block__wrapper {
+    background-image: url("../img/intro-triangle-desktop.svg");
     grid-template-rows: 290px max-content;
   }
 }

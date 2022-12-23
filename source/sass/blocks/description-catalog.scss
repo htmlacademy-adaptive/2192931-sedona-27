@@ -34,6 +34,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .description-catalog__wrapper {
+    background-image: url("../img/intro-triangle-desktop.svg");
+    display: grid;
+    grid-template-rows: 389px max-content;
+    background-size: 100%;
+  }
+}
+
 .description-catalog__image {
   margin: auto;
 }

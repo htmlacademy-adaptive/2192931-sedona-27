@@ -49,11 +49,11 @@
   width: 185px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 0;
+  z-index: 3;
 }
 
 @media (min-width: $tablet-width) {
   .main-header__logo {
-    z-index: 2;
+    z-index: 3;
   }
 }

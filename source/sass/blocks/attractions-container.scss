@@ -9,33 +9,47 @@
 
 .attractions-container__item {
   margin-bottom: 20px;
-  padding: 10px 0 10px 62px;
+  padding: 10px 0 10px 0;
+}
+
+.attractions-container__control-label {
+  padding-left: 62px;
 }
 
 @media (min-width: $tablet-width) {
   .attractions-container__item {
-    padding: 17px 28px 17px 0;
+    padding-left: 0;
     margin-bottom: 0;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .attractions-container__item {
+    margin-left: 0;
+  }
+}
+
 .attractions-container__label-control {
-  padding-left: 46px;
-  width: 218px;
+  position: relative;
+  padding-left: 16px;
   text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .attractions-container__label-control {
-    padding: 10px 0 10px 62px;
+    padding-left: 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .attractions-container {
     margin-bottom: 48px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 144px;
+    margin-right: 144px;
   }
 }
 
@@ -90,4 +104,56 @@
   .attractions-container-index {
     font-size: 21px;
   }
+}
+
+.attractions-container__label-control-mark {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 10%;
+  background-color: #f2f2f2;
+}
+
+.attractions-container__label-control-mark::before {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  content: "";
+  transform: rotate(130deg);
+  background-color: #333333;
+  width: 21px;
+  height: 3px;
+}
+
+.attractions-container__label-control-mark::after {
+  position: absolute;
+  top: 22px;
+  left: 12px;
+  width: 15px;
+  height: 3px;
+  transform: rotate(45deg);
+  background-color: #333333;
+  content: "";
+}
+
+.input-checkbox:hover + .attractions-container__label-control-mark {
+  filter: brightness(95%);
+  opacity: 0.7;
+}
+
+.input-checkbox:active + .attractions-container__label-control-mark {
+  filter: brightness(50%);
+  opacity: 0.3;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
