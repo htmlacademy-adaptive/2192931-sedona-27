@@ -5,6 +5,11 @@
 
   &--active {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
   }
 }
 
@@ -59,11 +64,7 @@
 }
 
 .main-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
   background-color: #ffffff;
-  min-height: 56px;
   z-index: 2;
   width: 100%;
 }
@@ -114,14 +115,9 @@
   }
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .main-nav__toggle {
-  position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
   width: 60px;
   height: 55px;
   border: none;
@@ -129,6 +125,8 @@
   cursor: pointer;
   z-index: 2;
   background-color: #ffffff;
+  margin-left: auto;
+  position: relative;
 
   &:hover::before {
     background: #ffffff;
@@ -208,6 +206,7 @@
 
 .main-nav--nojs {
   position: static;
+  padding-top: 47px;
 }
 
 .main-nav--nojs .main-nav__list-item-link {

@@ -4,18 +4,54 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.form-dates__label-field {
+  padding-left: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-dates {
+    position: relative;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-dates::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 338px;
+    background-color: #e5e5e5;
+    width: 1px;
+    //transform: rotate(90deg);
+  }
 }
 
 .form-dates__label {
   font-weight: 400;
   font-size: 14px;
+  line-height: 21px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.form-dates__label-name {
+  padding-left: 16px;
 }
 
 .form-dates__field {
   @include block-title;
   width: 100%;
+  border: none;
+  background-color: #f2f2f2;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
 }
 
 .form-dates__field::placeholder {
@@ -25,13 +61,15 @@
 .form-dates__title {
   text-align: center;
   font-size: 18px;
-  margin-top: 0;
   margin-bottom: 20px;
+  margin-top: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .form-dates__title {
     font-size: 21px;
+    margin-bottom: 28px;
+    margin-top: 0;
   }
 }
 
@@ -42,5 +80,11 @@
 @media (min-width: $tablet-width) {
   .form-dates__wrapper {
     padding: 0 43px 63px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-dates__wrapper {
+    padding: 0 63px 43px 0;
   }
 }

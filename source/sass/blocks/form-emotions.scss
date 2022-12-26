@@ -1,14 +1,28 @@
 .form-emotions__text-name {
+  position: relative;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   background: #f2f2f2;
   border: none;
   width: 100%;
   min-height: 160px;
+  resize: none;
+  padding: 16px;
+  color: #000000;
+  margin-bottom: 48px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-emotions__text-name {
+    margin-bottom: 56px;
+  }
 }
 
 .form-emotions__text-name::placeholder {
   @include block-title;
-  padding-top: 16px;
-  padding-left: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -30,6 +44,7 @@
 }
 
 .form-emotions {
+  position: relative;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 24px;
@@ -84,6 +99,54 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form-emotions__title::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 1px;
+    background-color: #e5e5e5;
+    width: 123px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-emotions__title::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: 1px;
+    background-color: #e5e5e5;
+    width: 123px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__title::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -95px;
+    height: 1px;
+    background-color: #e5e5e5;
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__title::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: -95px;
+    height: 1px;
+    background-color: #e5e5e5;
+    width: 280px;
+  }
+}
+
 .form-emotions__submit {
   background-color: #81b3d2;
   color: #ffffff;
@@ -96,7 +159,7 @@
   border: none;
   text-transform: uppercase;
   margin: 0;
-  padding: 16px 40px 16px 40px;
+  padding: 16px 38px 16px 38px;
   margin-bottom: 3px;
 }
 

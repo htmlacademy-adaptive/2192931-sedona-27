@@ -10,6 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .form__wrapper {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -19,6 +20,9 @@
   .form__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-right: 120px;
+    margin-left: 120px;
+    padding: 0;
   }
 }
 

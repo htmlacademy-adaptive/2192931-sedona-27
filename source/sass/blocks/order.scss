@@ -22,7 +22,7 @@
 }
 
 .order__text {
-  padding: 38px 29px 32px 29px;
+  padding: 38px 0 32px 0;
   text-align: center;
   color: #333333;
   font-weight: 400;
@@ -41,17 +41,40 @@
   height: 350px;
 }
 
-
 @media (min-width: $tablet-width) {
   .order__link.button {
     width: 458px;
-    padding: 14px  121px 17px 121px;
+    padding: 14px 121px 17px 121px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .order__link.button {
     width: 458px;
-    padding: 14px  121px 17px 121px;
+    padding: 14px 121px 17px 121px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order__text-transfer {
+    display: none;
+  }
+}
+
+.order__text-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .order__text-endure {
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
   }
 }
