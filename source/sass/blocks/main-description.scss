@@ -5,7 +5,7 @@
 
 .main-description__slogan {
   margin: 0;
-  padding: 0 18px 40px 18px;
+  padding: 0 15px 40px 15px;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@
 
 .main-description__title {
   @include block-title;
-  padding: 54px 18px 49px 18px;
+  padding: 54px 16px 49px 16px;
   margin: 0;
   text-align: center;
 }
@@ -40,6 +40,13 @@
   margin: 0;
   text-align: center;
   padding-bottom: 49px;
+  font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-title {
+    font-size: 21px;
+  }
 }
 
 .main-description__item-slogan {
@@ -48,7 +55,7 @@
 
 .main-description__text {
   min-height: 118px;
-  padding: 24px 26px 24px 26px;
+  padding: 24px 0 24px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -121,4 +128,200 @@
   flex-grow: 1;
   display: block;
   object-fit: cover;
+}
+
+@media (min-width: $mobile-width-only) {
+  .main-description__title-transfer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__title-transfer {
+    display: inline-block;
+  }
+}
+
+.main-description__slogan-transfer {
+  display: inline-block;
+}
+
+@media (min-width: $mobile-width-only) {
+  .main-description__slogan-transfer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__slogan-transfer {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__slogan-transfer {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .main-description__slogan-transfer--mobile {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .main-description__slogan-endure {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__slogan-endure {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__slogan-endure {
+    display: inline-block;
+  }
+}
+
+.main-description__slogan-transfer-mobile {
+  display: inline;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__slogan-transfer-mobile {
+    display: inlane;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__slogan-transfer-mobile {
+    display: none;
+  }
+}
+
+.main-description__item-title-transfer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-title-transfer {
+    display: inline;
+  }
+}
+
+.main-description__item-title-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-title-endure {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__item-title-endure {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-title-transfer-endure {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__item-title-transfer-endure {
+    display: none;
+  }
+}
+
+.main-description__item-title-transfer-middle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-title-transfer-middle {
+    display: none;
+  }
+}
+
+.main-description__item-slogan-transfer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-slogan-transfer {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__item-slogan-transfer {
+    display: none;
+  }
+}
+
+.main-description__item-slogan-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-slogan-endure {
+    display: inline;
+  }
+}
+
+.main-description__item-slogan-transfer-endure {
+  display: inline;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-slogan-transfer-endure {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__item-slogan-transfer-endure {
+    display: none;
+  }
+}
+
+.main-description__item-slogan-middle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-slogan-middle {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__item-slogan-middle {
+    display: none;
+  }
+}
+
+.main-description__item-slogan-endure-middle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__item-slogan-endure-middle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-description__item-slogan-endure-middle {
+    display: inline;
+  }
 }

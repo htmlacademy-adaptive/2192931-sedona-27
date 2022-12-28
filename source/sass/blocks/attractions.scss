@@ -4,14 +4,36 @@
   background-color: #ffffff;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
+.attractions__title {
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__title {
+    text-align: center;
+  }
+}
+
 .attractions__item {
   list-style-type: none;
-  padding: 23px 18px 0 18px;
+  padding: 23px 0 25px 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__item {
+    padding: 158px 0 60px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__item {
+    padding: 159px 50px 69px 50px;
+  }
 }
 
 .attractions__description {
@@ -27,9 +49,170 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    font-size: 21px;
   }
 }
 
 .attractions__item--souvenirs {
   padding-bottom: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-transfer {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-transfer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-endure {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-endure {
+    display: none;
+  }
+}
+
+.attractions__description-transfer-middle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-transfer-middle {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-transfer-middle {
+    display: none;
+  }
+}
+
+.attractions__description-transfer-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-transfer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-transfer-desktop {
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-transfer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-transfer-desktop {
+    display: inline;
+  }
+}
+
+.attractions__description-food-transfer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-food-transfer {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-food-transfer {
+    display: none;
+  }
+}
+
+.attractions__description-food-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-food-endure {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-food-endure {
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-souvenirs {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-souvenirs {
+    display: none;
+  }
+}
+
+.attractions__description-souvenirs-transfer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-souvenirs-transfer {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-souvenirs-transfer {
+    display: inline;
+  }
+}
+
+.attractions__description-souvenirs-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-souvenirs-endure {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-souvenirs-endure {
+    display: none;
+  }
+}
+
+.attractions__description-food {
+  display: inline;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__description-food {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__description-food {
+    display: none;
+  }
 }

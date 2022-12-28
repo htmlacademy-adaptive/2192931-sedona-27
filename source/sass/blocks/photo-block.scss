@@ -34,6 +34,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .photo-block__wrapper {
+    background-image: url("../img/intro-triangle-desktop.svg");
+    grid-template-rows: 290px max-content;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .photo-block {
@@ -55,7 +62,7 @@
 .photo-block__text {
   text-align: center;
   margin: 0;
-  padding: 37px 20px 50px 20px;
+  padding: 37px 10px 50px 10px;
   margin-top: auto;
   background-color: #ffffff;
 }
@@ -75,4 +82,24 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.photo-block__slogan-transfer {
+  display: inline;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-block__slogan-transfer {
+    display: none;
+  }
+}
+
+.photo-block__slogan-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-block__slogan-endure {
+    display: inline;
+  }
 }

@@ -34,6 +34,15 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .description-catalog__wrapper {
+    background-image: url("../img/intro-triangle-desktop.svg");
+    display: grid;
+    grid-template-rows: 389px max-content;
+    background-size: 100%;
+  }
+}
+
 .description-catalog__image {
   margin: auto;
 }
@@ -48,6 +57,7 @@
 @media (min-width: $desktop-width) {
   .description-catalog {
     background-image: url("../img/back-desktop-form.jpg");
+    background-size: 100%;
   }
 }
 
@@ -58,27 +68,34 @@
   line-height: 21px;
   margin: 0;
   text-align: center;
-  padding: 0 18px 32px 18px;
+  padding: 0 0 32px 0;
 }
 
 .description-catalog__container {
   background-color: #ffffff;
+  border-bottom: 1px solid#E5E5E5;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__container {
+    border-bottom: none;
+  }
 }
 
 .description-catalog__container__text {
-  padding: 36px 20px 0 20px;
+  padding: 36px 10px 0 10px;
   margin-bottom: 56px;
 }
 
 @media (min-width: $tablet-width) {
   .description-catalog__container__text {
-    padding: 64px 166px 102px 166px;
+    padding: 64px 150px 102px 150px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description-catalog__container__text {
-    padding: 115px 384px 67px 382px;
+    padding: 115px 380px 67px 380px;
   }
 }
 
@@ -90,5 +107,31 @@
 @media (min-width: $tablet-width) {
   .description-catalog__title {
     font-size: 30px;
+  }
+}
+
+.description-catalog__slogan-transfer {
+  display: inline;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__slogan-transfer {
+    display: none;
+  }
+}
+
+.description-catalog__slogan-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__slogan-endure {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog__slogan-endure {
+    display: inline;
   }
 }

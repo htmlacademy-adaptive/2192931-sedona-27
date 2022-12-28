@@ -3,6 +3,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
+  border-bottom: 1px solid#E5E5E5;
+}
+
+.form-contacts__label-field {
+  padding-left: 16px;
 }
 
 @media (min-width: $desktop-width) {
@@ -16,14 +21,12 @@
   .form-contacts {
     display: flex;
     flex-direction: column;
+    border-bottom: none;
   }
 }
 
 .form-contacts__mail::placeholder,
 .form-contacts__field::placeholder {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -33,6 +36,9 @@
   border: none;
   padding: 16px 0 16px 16px;
   width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .form-contacts__slogan {
@@ -46,6 +52,7 @@
   @include slogan-block;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .form-contacts__wrapper {
@@ -55,13 +62,15 @@
 .form-contacts__title {
   text-align: center;
   font-size: 18px;
-  margin-top: 0;
+  margin-top: 24px;
   margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .form-contacts__title {
     font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 28px;
   }
 }
 
@@ -77,6 +86,6 @@
 
 @media (min-width: $desktop-width) {
   .form-contacts__wrapper {
-    padding: 0 120px 166px 64px;
+    padding: 0 0 166px 64px;
   }
 }

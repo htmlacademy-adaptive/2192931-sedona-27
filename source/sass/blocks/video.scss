@@ -12,7 +12,20 @@
 .video__text {
   margin: 0;
   text-align: center;
-  padding: 17px 26px 38px 26px;
+  padding: 17px 0 38px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .video__text {
+    padding-top: 58px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__text {
+    padding-top: 62px;
+  }
 }
 
 .video__title {
@@ -44,4 +57,45 @@
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 0;
+}
+
+.video__slogan-transfer {
+  display: inline;
+}
+
+@media (min-width: $tablet-width) {
+  .video__slogan-transfer {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__slogan-transfer {
+    display: none;
+  }
+}
+
+.video__slogan-endure {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .video__slogan-endure {
+    display: inline;
+  }
+}
+
+.video__video {
+  position: relative;
+}
+
+.video__video__button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  background-image: url("../img/button-play.svg");
 }
