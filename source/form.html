@@ -7,6 +7,12 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./sass/style.scss">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-1.png"  type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.png"  type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -37,8 +43,12 @@
   <main class="main-catalog-container">
     <section class="description-catalog description-catalog--inner">
       <div class="description-catalog__wrapper">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-sedona-tablet-2.svg">
+          <source media="(min-width: 768px)" srcset="img/text-sedona-tablet-2.svg">
         <img class="description-catalog__image" src="img/mobile-sedona.svg" width="229" height="39"
           alt="Логотип города">
+        </picture>
       </div>
       <div class="description-catalog__container">
         <div class="description-catalog__container__text">

@@ -13,6 +13,11 @@
   background-color: #e6e6e6;
   margin: 0;
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile-form-retina.jpg");
+    background-size: 902px auto;
+  }
 }
 
 .description-catalog__wrapper {
@@ -44,13 +49,28 @@
 }
 
 .description-catalog__image {
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 52px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__image {
+    margin-top: 95px;
+    width: 456px;
+    height: 77px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .description-catalog {
     background-image: url("../img/back-tablet-form.jpg");
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-back-form.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 

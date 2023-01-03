@@ -30,7 +30,19 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.form-contacts__mail,
+.form-contacts__mail {
+  background: #f2f2f2;
+  border: none;
+  padding: 16px 0 16px 16px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-image: url("../img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+
 .form-contacts__field {
   background: #f2f2f2;
   border: none;
@@ -39,6 +51,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  background-image: url("../img/telephone.svg");
+  background-repeat: no-repeat;
+  background-position: right 0;
 }
 
 .form-contacts__slogan {
@@ -72,10 +87,6 @@
     margin-top: 0;
     margin-bottom: 28px;
   }
-}
-
-.form-contacts__field {
-  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

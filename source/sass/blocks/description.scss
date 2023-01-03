@@ -14,6 +14,11 @@
   text-transform: uppercase;
   margin: 0 auto;
   z-index: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-retina.jpg");
+    background-size: 901px auto;
+  }
 }
 
 .description__wrapper {
@@ -101,6 +106,13 @@
   .description {
     background-image: url("../img/back-desktop.jpg");
     grid-template-rows: 518px max-content;
+    background-size: auto 518px;
+    margin: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-retina.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -121,5 +133,15 @@
 }
 
 .description__image {
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 90px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .description__image {
+    margin-top: 77px;
+    width: 461px;
+    height: 349px;
+  }
 }

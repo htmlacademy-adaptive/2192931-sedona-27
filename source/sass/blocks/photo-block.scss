@@ -15,6 +15,11 @@
   background-color: #e6e6e6;
   z-index: -1;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/retina-mobile-catalog.jpg");
+    background-size: 902px auto;
+  }
 }
 
 .photo-block__wrapper {
@@ -41,13 +46,17 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .photo-block {
     background-image: url("../img/back-desktop-tablet.jpg");
     grid-template-rows: 290px max-content;
     font-size: 30px;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-back-retina.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -74,7 +83,25 @@
 }
 
 .photo-block__image {
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 52px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-block__image {
+    margin-top: 95px;
+    width: 456px;
+    height: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-block__image {
+    margin-top: 101px;
+    width: 459px;
+    height: 79px;
+  }
 }
 
 .photo-block__slogan {
