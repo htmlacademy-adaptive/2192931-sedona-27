@@ -178,12 +178,20 @@
   content: "";
 }
 
-.attractions-container__checkbox:hover + .attractions-container__label-control-mark {
-  filter: brightness(95%);
+.attractions-container__label-control-mark:hover::after,
+.attractions-container__label-control-mark:hover::before {
   opacity: 0.7;
 }
 
-.attractions-container__checkbox:active + .attractions-container__label-control-mark {
-  filter: brightness(50%);
+.attractions-container__label-control-mark:active::after,
+.attractions-container__label-control-mark:active::before {
   opacity: 0.3;
+}
+
+.attractions-container__checkbox:hover + .attractions-container__label-control-mark {
+  background-color: #e5e5e5;
+}
+
+.attractions-container__checkbox:active + .attractions-container__label-control-mark {
+  background-color: #d5d5d5;
 }

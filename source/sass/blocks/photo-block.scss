@@ -48,8 +48,8 @@
 
 @media (min-width: $tablet-width) {
   .photo-block {
-    background-image: url("../img/back-desktop-tablet.jpg");
-    grid-template-rows: 290px max-content;
+    background-image: url("../img/tablet-desktop-back.jpg");
+    grid-template-rows: 338px max-content;
     font-size: 30px;
     z-index: 1;
 
@@ -62,9 +62,8 @@
 
 @media (min-width: $desktop-width) {
   .photo-block {
-    background-image: url("../img/back-desktop-tablet.jpg");
-    grid-template-rows: 290px max-content;
-    z-index: 1;
+    background-image: url("../img/back-desktop-catalog.jpg");
+    grid-template-rows: 357px max-content;
   }
 }
 

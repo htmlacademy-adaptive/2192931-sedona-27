@@ -1,6 +1,6 @@
 .description-catalog {
   display: grid;
-  grid-template-rows: 389px max-content;
+  grid-template-rows: 214px max-content;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -42,8 +42,6 @@
 @media (min-width: $desktop-width) {
   .description-catalog__wrapper {
     background-image: url("../img/intro-triangle-desktop.svg");
-    display: grid;
-    grid-template-rows: 389px max-content;
     background-size: 100%;
   }
 }
@@ -65,6 +63,7 @@
 @media (min-width: $tablet-width) {
   .description-catalog {
     background-image: url("../img/back-tablet-form.jpg");
+    grid-template-rows: 291px max-content;
     z-index: 1;
 
     @media (min-resolution: 2dppx) {
@@ -78,6 +77,7 @@
   .description-catalog {
     background-image: url("../img/back-desktop-form.jpg");
     background-size: 100%;
+    grid-template-rows: 353px max-content;
   }
 }
 
