@@ -7,6 +7,12 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./sass/style.scss">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-1.png" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.png" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -37,8 +43,12 @@
   <main class="main-catalog-container">
     <section class="description-catalog description-catalog--inner">
       <div class="description-catalog__wrapper">
-        <img class="description-catalog__image" src="img/mobile-sedona.svg" width="229" height="39"
-          alt="Логотип города">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-sedona-tablet-2.svg">
+          <source media="(min-width: 768px)" srcset="img/text-sedona-tablet-2.svg">
+          <img class="description-catalog__image" src="img/mobile-sedona.svg" width="229" height="39"
+            alt="Логотип города">
+        </picture>
       </div>
       <div class="description-catalog__container">
         <div class="description-catalog__container__text">
@@ -100,13 +110,13 @@
             <li class="form-block__item">
               <label class="form-block__control" for="radio-mark">
                 <input class="visually-hidden form-block__input-radio" type="radio" name="radio-button"
-                  value="Скорее отрицательное" id="radio-mark" disabled><span class="form-block__radio"></span>Скорее
+                  value="Скорее отрицательное" id="radio-mark"><span class="form-block__radio"></span>Скорее
                 отрицательное</label>
             </li>
             <li class="form-block__item">
               <label class="form-block__control" for="radio">
                 <input class="visually-hidden form-block__input-radio" type="radio" name="radio-button"
-                  value="Затрудняюсь ответить" id="radio" disabled><span class="form-block__radio"></span>Затрудняюсь
+                  value="Затрудняюсь ответить" id="radio"><span class="form-block__radio"></span>Затрудняюсь
                 ответить</label>
             </li>
           </ul>
@@ -184,6 +194,28 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal-container">
+      <div class="modal-container__block-open">
+        <h1 class="modal__title">Что-то пошло<br class="modal__slogan-transfer"> не так!</h1>
+        <p class="modal__slogan">Проверьте поля, выделенные<br class="modal__slogan-endure"> красным,
+          <br class="modal__slogan-transfer">скорее всего вы<br class="modal__slogan-endure"> забыли их заполнить
+        </p>
+        <button class="modal__button">Ок</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal--close">
+    <div class="modal-container">
+      <div class="modal-container__block">
+        <h1 class="modal__title">Ваш отзыв отправлен!</h1>
+        <p class="modal__slogan">Спасибо за ваше участие, ваш<br class="modal__slogan-endure">
+          отзыв уже поступил к нам.<br class="modal__slogan-transfer">
+          В ближайшее время мы<br class="modal__slogan-endure"> опубликуем его на сайте.</p>
+        <button class="modal__button">Ок</button>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

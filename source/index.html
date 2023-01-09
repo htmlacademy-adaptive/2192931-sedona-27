@@ -8,7 +8,11 @@
   <link rel="stylesheet" href="./sass/style.scss">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="img/f">
+  <link rel="icon" href="img/favicons/favicon-1.png"  type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.png"  type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -39,7 +43,11 @@
   <main class="page-main">
     <section class="description description--inner">
       <div class="description__wrapper">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-desktop-2.svg">
+          <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
         <img class="description__image" src="img/text-index-desktop.svg" width="282" height="214" alt="Логотип города">
+        </picture>
       </div>
       <div class="description__text">
         <h1 class="description__title">Седона-небольшой<br class="description__title-transfer-mobile"> городок в
@@ -57,11 +65,14 @@
           <div class="main-description__text">
             <h2 class="main-description__title">Настоящий<br class="main-description__title-transfer"> городок</h2>
             <p class="main-description__slogan">Седона не аттракцион для<br class="main-description__slogan-transfer">
-              туристов,
-              <br> там течет своя<br class="main-description__slogan-transfer"> жизнь
+              туристов,<br class="main-description__slogan-endure-mob">там течет своя<br class="main-description__slogan-transfer"> жизнь
             </p>
           </div>
+          <picture class="picture">
+            <source media="(min-width: 1200px)" srcset="img/photo-city-5.png 1x, img/index-city-desktop-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/index-city-retina.jpg 2x">
           <img class="main-description__image" src="img/city-mobile.jpg" width="320" height="260" alt="Фрагмент города">
+        </picture>
           <ul class="attractions">
             <li class="attractions__item attractions__item--housing">
               <h3 class="attractions__title">Жилье</h3>
@@ -86,9 +97,13 @@
           </ul>
         </li>
         <li class="main-description__item main-description__item--blue">
+          <picture class="picture">
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-3.jpg 1x, img/desktop-bridge-retina.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-2.jpg 1x, img/bridge-tablet-retina.jpg 2x">
           <img class="main-description__image" src="img/mountain-mobile.png" width="320" height="260"
             alt="Фрагмент каньона">
-          <div class="main-description__text">
+          </picture>
+          <div class="main-description__text main-description__text--bridge">
             <h2 class="main-description__title">Там есть<br class="main-description__title-transfer"> мост дьявола</h2>
             <p class="main-description__slogan">Да, по нему можно<br class="main-description__slogan-transfer">
               пройти!<br class="main-description__slogan-endure">
@@ -96,7 +111,7 @@
           </div>
         </li>
         <li class="main-description__item main-description__item--grey">
-          <div class="main-description__text">
+          <div class="main-description__text-grey">
             <h3 class="main-description__item-title">Небольшая<br class="main-description__item-title-transfer"> площадь
             </h3>
             <p class="main-description__item-slogan main-description__item-slogan--grey">Все интересные
@@ -106,8 +121,8 @@
           </div>
         </li>
         <li class="main-description__item main-description__item--grey">
-          <div class="main-description__text">
-            <h3 class="main-description__item-title">Красивая<br class="main-description__item-title-transfer"> дорога
+          <div class="main-description__text-grey">
+            <h3 class="main-description__item-title-grey">Красивая<br class="main-description__item-title-transfer"> дорога
             </h3>
             <p class="main-description__item-slogan main-description__item-slogan--grey">Ехать в Седону из
               Лас-<br class="main-description__item-slogan-transfer">
@@ -116,10 +131,10 @@
           </div>
         </li>
         <li class="main-description__item main-description__item--grey">
-          <div class="main-description__text">
+          <div class="main-description__text-grey">
             <h3 class="main-description__item-title">Мало<br class="main-description__item-title-transfer"> туристов
             </h3>
-            <p class="main-description__item-slogan main-description__item-slogan--grey">Большинство едет в гранд<br
+            <p class="main-description__item-slogan main-description__item-slogan--grey">Большинство едет в гранд <br
                 class="main-description__item-slogan-middle">
               каньон <br class="main-description__item-slogan-transfer-endure"> и<br
                 class="main-description__item-slogan-endure-middle"> толпится там</p>
