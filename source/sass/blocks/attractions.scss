@@ -28,13 +28,13 @@
 
 @media (min-width: $tablet-width) {
   .attractions__item {
-    padding: 140px 0 60px 10px;
+    padding: 140px 0 60px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .attractions__item {
-    padding: 159px 50px 69px 50px;
+    padding: 141px 0 60px 0;
   }
 }
 
@@ -215,55 +215,78 @@
   }
 }
 
-.attractions__item--housing {
-  background-image: url("../img/icon-house-mobile.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: 18px 20%;
-  padding-bottom: 46px;
-}
-
-.attractions__item--food {
-  background-image: url("../img/icon-burger-mobile.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: 18px 30%;
-}
-
-.attractions__item--souvenirs {
-  background-image: url("../img/icon-gift-mobile.svg");
-  background-repeat: no-repeat;
-  display: block;
-  background-position: 18px 25%;
-  padding-bottom: 46px;
+.attractions__item-icon {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+  right: 110px;
+  width: 40px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {
-  .attractions__item--housing {
-    background-image: url("../img/icon-house.svg");
-    background-repeat: no-repeat;
-    display: block;
-    background-position: 50% 24%;
-    padding: 142px 0 60px 0;
+  .attractions__item-icon {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 82px;
+    height: 68px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .attractions__item--food {
-    background-image: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
-    display: block;
-    background-position: 50% 25%;
-    padding: 138px 0 60px 0;
+@media (min-width: $desktop-width) {
+  .attractions__item-icon {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 82px;
+    height: 68px;
   }
 }
 
+.attractions__item-icon-house {
+  position: absolute;
+  top: 35px;
+  left: 19px;
+  right: 110px;
+  width: 39px;
+  height: 36px;
+}
+
 @media (min-width: $tablet-width) {
-  .attractions__item--souvenirs {
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    display: block;
-    background-position: 50% 25%;
-    padding: 135px 0 60px 0;
+  .attractions__item-icon-house {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 77px;
+    height: 72px;
   }
 }
+
+.attractions__item-icon-souvenir {
+  position: absolute;
+  top: 35px;
+  left: 19px;
+  right: 110px;
+  width: 32px;
+  height: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__item-icon-souvenir {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 66px;
+    height: 75px;
+  }
+}
+

@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./sass/style.scss">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon-1.png"  type="image/png">
@@ -16,6 +15,7 @@
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="#">
@@ -69,12 +69,15 @@
             </p>
           </div>
           <picture class="picture">
-            <source media="(min-width: 1200px)" srcset="img/photo-city-5.png 1x, img/index-city-desktop-retina.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/index-city-retina.jpg 2x">
-          <img class="main-description__image" src="img/city-mobile.jpg" width="320" height="260" alt="Фрагмент города">
+            <source media="(min-width: 1200px)" srcset="img/photo-city-5.webp 1x, img/index-city-desktop-retina.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/index-city-retina.webp 2x">
+          <img class="main-description__image" src="img/city-mobile.webp" width="320" height="260" alt="Фрагмент города">
         </picture>
           <ul class="attractions">
             <li class="attractions__item attractions__item--housing">
+              <svg class="attractions__item-icon-house" width="82" height="68">
+                <use href="img/sprite.svg#icon-house"></use>
+              </svg>
               <h3 class="attractions__title">Жилье</h3>
               <p class="attractions__description">Рекомендуем пожить в<br class="attractions__description-transfer">
                 настоящем<br class="attractions__description-transfer-desktop"> мотеле,
@@ -82,12 +85,18 @@
                 как в <br class="attractions__description-endure"> кино!</p>
             </li>
             <li class="attractions__item attractions__item--food">
+              <svg class="attractions__item-icon" width="82" height="68">
+                <use href="img/sprite.svg#icon-login"></use>
+              </svg>
               <h3 class="attractions__title">Еда</h3>
               <p class="attractions__description">Всегда заказывайте<br class="attractions__description-food-transfer">
                 фирменный<br class="attractions__description-food"> бургер,<br
                   class="attractions__description-food-endure"> Вы не разочаруетесь!</p>
             </li>
             <li class="attractions__item attractions__item--souvenirs">
+              <svg class="attractions__item-icon-souvenir" width="66" height="75">
+                <use href="img/sprite.svg#icon-souvenir"></use>
+              </svg>
               <h3 class="attractions__title">Сувениры</h3>
               <p class="attractions__description">Не только китайского,<br
                   class="attractions__description-souvenirs-transfer">
