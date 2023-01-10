@@ -49,13 +49,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .order__link.button {
-    width: 458px;
-    padding: 14px 121px 17px 121px;
-  }
-}
-
-@media (min-width: $tablet-width) {
   .order__text-transfer {
     display: none;
   }
