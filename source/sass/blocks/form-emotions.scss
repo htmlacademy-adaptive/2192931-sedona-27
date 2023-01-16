@@ -8,16 +8,22 @@
   background: #f2f2f2;
   border: none;
   width: 100%;
-  min-height: 160px;
+  min-height: 147px;
   resize: none;
-  padding: 16px;
+  padding: 17px 17px 15px 17px;
   color: #000000;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
 }
 
 @media (min-width: $tablet-width) {
   .form-emotions__text-name {
-    margin-bottom: 56px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__text-name {
+    margin-bottom: 48px;
   }
 }
 
@@ -39,7 +45,13 @@
 
 @media (min-width: $tablet-width) {
   .form-emotions__slogan {
-    margin: 16px 0 16px 0;
+    margin: 23px 0 16px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__slogan {
+    margin: 23px 0 14px 0;
   }
 }
 
@@ -54,9 +66,9 @@
   .form-emotions {
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 64px;
+    margin-left: 54px;
+    margin-right: 52px;
+    margin-bottom: 60px;
   }
 }
 
@@ -66,7 +78,7 @@
     margin-right: 216px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 
@@ -89,7 +101,8 @@
   font-size: 18px;
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  margin-top: 29px;
 }
 
 @media (min-width: $tablet-width) {
@@ -159,7 +172,8 @@
   border: none;
   text-transform: uppercase;
   margin: 0;
-  padding: 16px 38px 16px 38px;
+  width: 100%;
+  padding: 16px 0 16px 0;
   margin-bottom: 3px;
 }
 

@@ -13,9 +13,10 @@
   &::before {
     counter-increment: section;
     content: "— № "counter(section) " -";
-    padding-bottom: 17px;
+    padding-bottom: 19px;
   }
 }
+
 
 .main-description__slogan--grey {
   color: #333333;
@@ -39,7 +40,10 @@
 }
 
 .main-description__title {
-  @include block-title;
+  font-family: "ptsans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
   padding: 0 0 11px 0;
   margin: 0;
   text-align: center;
@@ -91,16 +95,43 @@
   &::before {
     counter-increment: section;
     content: "— № "counter(section) " -";
-    padding-bottom: 17px;
+    padding-bottom: 24px;
   }
 }
 
-.main-description__text-grey,
-.main-description__text {
+.main-description__text-grey {
   position: relative;
   min-height: 118px;
   padding: 24px 0 24px 0;
   order: 0;
+}
+
+.main-description__text:nth-child(1) {
+  position: relative;
+  min-height: 118px;
+  padding: 52px 0 42px 0;
+  order: 0;
+  background-image: url("../img/white-copy.svg");
+  background-repeat: no-repeat;
+  background-position-y: -18px;
+  background-size: contain;
+}
+
+@media (min-width: $tablet-width) {
+  .main-description__text:nth-child(1) {
+    position: relative;
+    min-height: 118px;
+    padding: 52px 23px 42px 23px;
+    order: 0;
+    background-image: none;
+  }
+}
+
+.main-description__text--bridge {
+  position: relative;
+  min-height: 118px;
+  padding: 42px 0 36px 0;
+  order: -1;
 }
 
 @media (min-width: $tablet-width) {
@@ -112,14 +143,13 @@
 
 @media (min-width: $tablet-width) {
   .main-description__text-grey:nth-child(1) {
-    padding: 42px 17px 42px 33px;
-    text-align: center;
+    padding: 43px 19px 44px 33px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .main-description__text {
-    padding: 52px 23px 17px 23px;
+    padding: 52px 18px 22px 31px;
   }
 }
 
@@ -207,7 +237,7 @@
   order: 0;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -368,6 +398,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-description__item-title-transfer-middle {
+    display: inline;
+  }
+}
+
 .main-description__item-slogan-transfer {
   display: none;
 }
@@ -416,7 +452,7 @@
 
 @media (min-width: $tablet-width) {
   .main-description__item-slogan-middle {
-    display: none;
+    display: inline;
   }
 }
 
@@ -440,10 +476,6 @@
   .main-description__item-slogan-endure-middle {
     display: inline;
   }
-}
-
-.main-description__text--bridge {
-  order: -1;
 }
 
 @media (min-width: $tablet-width) {

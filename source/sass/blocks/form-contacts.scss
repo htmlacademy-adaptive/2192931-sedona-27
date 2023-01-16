@@ -36,7 +36,7 @@
   padding: 16px 0 16px 16px;
   width: 100%;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 26px;
   background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
@@ -58,6 +58,12 @@
   padding-right: 80px;
 }
 
+@media (min-width: $desktop-width) {
+  .form-contacts__field {
+    font-size: 17px;
+  }
+}
+
 .form-contacts__slogan {
   font-weight: 400;
   font-size: 14px;
@@ -73,14 +79,14 @@
 }
 
 .form-contacts__wrapper {
-  padding: 0 20px 49px 20px;
+  padding: 0 20px 19px 20px;
 }
 
 .form-contacts__title {
   text-align: center;
   font-size: 18px;
-  margin-top: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+  margin-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -88,17 +94,26 @@
     font-size: 21px;
     margin-top: 0;
     margin-bottom: 28px;
+    margin-right: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-contacts__title {
+    margin-top: 0;
+    margin-bottom: 28px;
+    margin-left: 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-contacts__wrapper {
-    padding: 0 60px 158px 44px;
+    padding: 0 52px 143px 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-contacts__wrapper {
-    padding: 0 0 166px 64px;
+    padding: 0 0 150px 78px;
   }
 }

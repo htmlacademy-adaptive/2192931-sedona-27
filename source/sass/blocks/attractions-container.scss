@@ -4,13 +4,11 @@
   border: none;
   padding: 0;
   margin-bottom: 24px;
-  margin-left: 20px;
-  margin-right: 20px;
   border-bottom: 1px solid#E5E5E5;
 }
 
 .attractions-container__item {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   padding: 10px 0 10px 0;
 }
 
@@ -41,8 +39,8 @@
 @media (min-width: $tablet-width) {
   .attractions-container {
     margin-bottom: 48px;
-    margin-left: 144px;
-    margin-right: 144px;
+    margin-left: 133px;
+    margin-right: 106px;
     border-bottom: none;
   }
 }
@@ -57,6 +55,8 @@
 
 .attractions-container__list {
   @include list-reset;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -75,7 +75,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-wrap: wrap;
     text-align: center;
-    gap: 64px;
+    gap: 47px;
+    padding: 0 40px 14px 44px;
   }
 }
 
@@ -99,7 +100,8 @@
 @media (min-width: $tablet-width) {
   .attractions-container-index {
     font-size: 21px;
-    margin-bottom: 59px;
+    margin-bottom: 26px;
+    padding: 25px 41px 0 10px;
   }
 }
 
@@ -107,7 +109,8 @@
   .attractions-container-index::before {
     content: "";
     position: absolute;
-    left: -85px;
+    left: -90px;
+    top: 48px;
     height: 1px;
     background-color: #e5e5e5;
     width: 123px;
@@ -133,6 +136,7 @@
     height: 1px;
     background-color: #e5e5e5;
     width: 280px;
+    top: 48px;
   }
 }
 
