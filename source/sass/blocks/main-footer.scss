@@ -124,15 +124,15 @@
   display: block;
   width: 48px;
   height: 48px;
-}
 
-.main-footer__social-link:hover {
-  background-color: #669ec0;
-}
+  &:hover {
+    background-color: #669ec0;
+  }
 
-.main-footer__social-link:focus {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0);
+  }
 }
 
 .main-footer__social-item {
@@ -140,13 +140,13 @@
 }
 
 .main-footer__social-link--vkontakte {
-  background-image: url("../img/vkontakte.svg");
+  background-image: url("../img/vkontakte.png");
 }
 
 .main-footer__social-link--telegram {
-  background-image: url("../img/telegram.svg");
+  background-image: url("../img/telegram.png");
 }
 
 .main-footer__social-link--youtube {
-  background-image: url("../img/youtube.svg");
+  background-image: url("../img/youtube.png");
 }
