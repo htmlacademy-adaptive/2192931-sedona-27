@@ -5,7 +5,6 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
@@ -128,12 +127,6 @@ const watcher = () => {
 gulp.watch('source/sass/**/*.scss', gulp.series(styles));
 gulp.watch('source/js/script.js', gulp.series(scripts));
 gulp.watch('source/*.html', gulp.series(html, reload));
-}
-
-// del
-
-export const reset = () => {
-  return deleteAsync(app.path.clean);
 }
 
 // Build

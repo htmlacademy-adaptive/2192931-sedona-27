@@ -39,7 +39,15 @@
 }
 
 .attractions__item--souvenirs {
+  background-image: url("../img/icon-gift-mobile.svg");
   padding: 1px 0 42px 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__item--souvenirs {
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -283,15 +291,6 @@
     width: 77px;
     height: 72px;
   }
-}
-
-.attractions__item-icon-souvenir {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  right: 110px;
-  width: 32px;
-  height: 38px;
 }
 
 @media (min-width: $tablet-width) {
