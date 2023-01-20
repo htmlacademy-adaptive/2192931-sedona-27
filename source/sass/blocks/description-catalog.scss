@@ -55,8 +55,8 @@
 
 @media (min-width: $tablet-width) {
   .description-catalog__image {
-    margin-top: 102px;
-    width: 456px;
+    margin-top: 95px;
+    width: 467px;
     height: 77px;
   }
 }
@@ -100,6 +100,18 @@
   padding: 7px 0 31px 0;
 }
 
+@media (min-width: $tablet-width) {
+  .description-catalog__slogan {
+    margin-bottom: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog__slogan {
+    padding-top: 0;
+  }
+}
+
 .description-catalog__container {
   background-color: #ffffff;
   border-bottom: 1px solid#E5E5E5;
@@ -137,7 +149,8 @@
 @media (min-width: $tablet-width) {
   .description-catalog__title {
     font-size: 30px;
-    margin-bottom: 23px;
+    margin-bottom: 14px;
+    margin-top: 43px;
   }
 }
 

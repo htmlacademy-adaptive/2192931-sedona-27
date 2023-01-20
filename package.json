@@ -24,7 +24,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
@@ -47,6 +47,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@squoosh/lib": "^0.5.3"
+    "@squoosh/lib": "^0.5.3",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-svg-sprite": "^2.0.1"
   }
 }

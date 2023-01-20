@@ -60,7 +60,7 @@
 
 .form-block__list {
   @include list-reset;
-  margin: 0 20px 0 20px;
+  margin: 0 13px 0 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -88,7 +88,7 @@
 
 .form-block__title {
   margin-bottom: 29px;
-  padding-top: 27px;
+  padding-top: 23px;
 }
 
 @media (min-width: $tablet-width) {

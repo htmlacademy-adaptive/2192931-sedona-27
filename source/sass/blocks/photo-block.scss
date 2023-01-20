@@ -105,6 +105,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .photo-block__text {
+    padding: 68px 155px 67px;
+  }
+}
+
 .photo-block__image {
   margin: 0 auto;
   margin-top: 52px;

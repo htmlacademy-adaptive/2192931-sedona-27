@@ -12,18 +12,20 @@
   resize: none;
   padding: 17px 17px 15px 17px;
   color: #000000;
-  margin-bottom: 49px;
+  margin-bottom: 51px;
 }
 
 @media (min-width: $tablet-width) {
   .form-emotions__text-name {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+    padding-bottom: 91px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-emotions__text-name {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
+    padding-bottom: 92px;
   }
 }
 
@@ -57,8 +59,8 @@
 
 .form-emotions {
   position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 11px;
   margin-bottom: 24px;
 }
 
@@ -78,7 +80,7 @@
     margin-right: 216px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+    margin-bottom: 74px;
   }
 }
 
@@ -87,6 +89,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 77px;
   }
 }
 
@@ -107,8 +110,17 @@
 
 @media (min-width: $tablet-width) {
   .form-emotions__title {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
     font-size: 21px;
+    margin-top: -22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-emotions__title {
+    margin-bottom: 25px;
+    font-size: 21px;
+    margin-top: 3px;
   }
 }
 
@@ -181,18 +193,20 @@
   background-color: #669ec0;
 }
 
-.form-emotions__submit:focus {
-  background-color: #5496bd;
+.form-emotions__submit:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {
   .form-emotions__submit {
     padding: 16px 71px 16px 71px;
+    width: 326px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-emotions__submit {
-    padding: 16px 101px 16px 101px;
+    padding: 16px 67px;
+    width: 385px;
   }
 }

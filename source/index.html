@@ -24,8 +24,8 @@
           <li class="main-nav__list-item main-nav__list-item--active"><a
               class="main-nav__list-item-link main-nav__list-item-link--active" href="index.html">Главная</a></li>
           <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="form.html">Форма отзыва</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">HTML Academy</a></li>
+          <li class="main-nav__list-item main-nav__list-item-link--form"><a class="main-nav__list-item-link" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__list-item main-nav__list-item-link--academy"><a class="main-nav__list-item-link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
@@ -62,9 +62,7 @@
               class="main-description__image" src="img/city-mobile.webp" width="320" height="260" alt="Фрагмент города">
           </picture>
           <ul class="attractions">
-            <li class="attractions__item attractions__item--housing"><svg class="attractions__item-icon-house"
-                width="82" height="68">
-                <use href="img/sprite.svg#icon-house"></use>
+            <li class="attractions__item attractions__item--housing">
               </svg>
               <h3 class="attractions__title">Жилье</h3>
               <p class="attractions__description">Рекомендуем пожить в<br
@@ -73,19 +71,14 @@
                   class="attractions__description-transfer-middle">как в<br
                   class="attractions__description-endure">кино!</p>
             </li>
-            <li class="attractions__item attractions__item--food"><svg class="attractions__item-icon" width="82"
-                height="68">
-                <use href="img/sprite.svg#icon-login"></use>
-              </svg>
+            <li class="attractions__item attractions__item--food">
               <h3 class="attractions__title">Еда</h3>
-              <p class="attractions__description">Всегда заказывайте<br
+              <p class="attractions__description attractions__description--order">Всегда заказывайте<br
                   class="attractions__description-food-transfer">фирменный<br
                   class="attractions__description-food">бургер,<br class="attractions__description-food-endure">Вы не
                 разочаруетесь!</p>
             </li>
             <li class="attractions__item attractions__item--souvenirs">
-                <use href="img/sprite.svg#icon-souvenir"></use>
-              </svg>
               <h3 class="attractions__title">Сувениры</h3>
               <p class="attractions__description">Не только китайского,<br
                   class="attractions__description-souvenirs-transfer">но и<br
@@ -104,12 +97,12 @@
           <div class="main-description__text main-description__text--bridge">
             <h2 class="main-description__title">Там есть<br class="main-description__title-transfer">мост дьявола</h2>
             <p class="main-description__slogan">Да, по нему можно<br
-                class="main-description__slogan-transfer">пройти!<br class="main-description__slogan-endure">Если вы<br
+                class="main-description__slogan-transfer">пройти!  <br class="main-description__slogan-endure">Если вы<br
                 class="main-description__slogan-transfer-mobile">осмелитесь, конечно</p>
           </div>
         </li>
         <li class="main-description__item main-description__item--grey">
-          <div class="main-description__text-grey">
+          <div class="main-description__text-grey main-description__text-grey--first">
             <h3 class="main-description__item-title">Небольшая<br class="main-description__item-title-transfer">площадь
             </h3>
             <p class="main-description__item-slogan main-description__item-slogan--grey">Все интересные места<br
@@ -119,12 +112,12 @@
           </div>
         </li>
         <li class="main-description__item main-description__item--grey">
-          <div class="main-description__text-grey">
+          <div class="main-description__text-grey main-description__text-grey--second">
             <h3 class="main-description__item-title-grey">Красивая<br
                 class="main-description__item-title-transfer">дорога</h3>
             <p class="main-description__item-slogan main-description__item-slogan--grey">Ехать в Седону из Лас-<br
                 class="main-description__item-slogan-transfer">Вегаса<br
-                class="main-description__item-slogan-transfer-endure">совсем<br
+                class="main-description__item-slogan-transfer-endure"> совсем<br
                 class="main-description__item-slogan-endure">не скучно!</p>
           </div>
         </li>
@@ -148,7 +141,7 @@
             седоне</p>
         </div><a class="order__link button" href="#">Найти гостиницу</a><iframe class="order__card-image"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104370.4807754436!2d-111.79438625760147!3d35.1671557087648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1671567172839!5m2!1sru!2sru"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
@@ -158,16 +151,30 @@
       <div class="main-footer__social social">
         <ul class="main-footer__social__list">
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--vkontakte"
-              href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a></li>
+              href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span>
+              <svg class="main-footer__social-vkontakte"
+              width="24" height="18">
+              <use href="img/sprite.svg#icon-vkontakte">
+            </a></li>
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--telegram"
-              href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a></li>
+              href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span>
+              <svg class="main-footer__social-telegram"
+              width="22" height="18">
+              <use href="img/sprite.svg#icon-telegram">
+              </a></li>
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--youtube"
-              href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a></li>
+              href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="main-footer__social-youtube"
+              width="20" height="14">
+              <use href="img/sprite.svg#icon-youtube">
+            </a></li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright"><b class="copyright__text">Разработано:</b> <a
+      <div class="main-footer__copyright copyright"><a
           class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span></a></div>
+            Academy</span><svg class="main-footer__copyright-icon-academy"
+            width="82" height="68">
+            <use href="img/sprite.svg#icon-academy"></use></a></div>
     </div>
   </footer>
   <script src="js/script.js"></script>

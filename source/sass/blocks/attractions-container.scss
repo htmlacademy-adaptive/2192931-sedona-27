@@ -55,8 +55,7 @@
 
 .attractions-container__list {
   @include list-reset;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px 0 11px;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,6 +64,8 @@
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     text-align: left;
+    margin-left: 5px;
+    margin-right: -2px;
   }
 }
 
@@ -100,8 +101,15 @@
 @media (min-width: $tablet-width) {
   .attractions-container-index {
     font-size: 21px;
-    margin-bottom: 26px;
-    padding: 25px 41px 0 10px;
+    margin-bottom: 29px;
+    padding: 29px 34px 0 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions-container-index {
+    padding: 29px 16px 0 10px;
+    margin-bottom: 59px;
   }
 }
 
@@ -109,8 +117,8 @@
   .attractions-container-index::before {
     content: "";
     position: absolute;
-    left: -90px;
-    top: 48px;
+    left: -79px;
+    top: 55px;
     height: 1px;
     background-color: #e5e5e5;
     width: 123px;
@@ -121,7 +129,7 @@
   .attractions-container-index::after {
     content: "";
     position: absolute;
-    right: -85px;
+    right: -58px;
     height: 1px;
     background-color: #e5e5e5;
     width: 123px;
@@ -136,7 +144,7 @@
     height: 1px;
     background-color: #e5e5e5;
     width: 280px;
-    top: 48px;
+    top: 53px;
   }
 }
 
@@ -144,6 +152,7 @@
   .attractions-container-index::after {
     content: "";
     position: absolute;
+    top: 53px;
     right: 0;
     height: 1px;
     background-color: #e5e5e5;

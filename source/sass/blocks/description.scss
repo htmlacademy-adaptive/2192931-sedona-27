@@ -7,10 +7,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../img/sedona-mobile.webp");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #e6e6e6;
+  background-color: #dfecf1;
+  background-position-y: 23px;
   text-transform: uppercase;
   margin: 0 auto;
   z-index: 0;
@@ -26,7 +27,7 @@
     background-image: url("../img/desktop-index-back.jpg");
     grid-template-rows: 516px max-content;
     margin: auto;
-    background-position-x: 3px;
+    background-position-y: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop-retina.jpg");
@@ -90,6 +91,14 @@
   .description__title {
     font-size: 21px;
     line-height: 26px;
+    word-spacing: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__title {
+    font-size: 21px;
+    line-height: 26px;
     word-spacing: 8px;
   }
 }
@@ -122,6 +131,7 @@
     background-image: url("../img/back-desktop.jpg");
     z-index: 1;
     grid-template-rows: 517px max-content;
+    background-position-y: 0;
   }
 }
 

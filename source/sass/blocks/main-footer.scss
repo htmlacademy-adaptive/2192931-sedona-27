@@ -9,6 +9,12 @@
   margin: 0 auto;
 }
 
+.main-footer__copyright-icon-academy {
+  width: 127px;
+  height: 34px;
+  margin: 0 0 0 -47px;
+}
+
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -67,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__social {
-    padding: 36px 0 36px 0;
+    padding: 21px 10px 0 14px;
     margin: 0;
   }
 }
@@ -82,21 +88,22 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__link {
-    padding: 48px 39px 45px 25px;
+    padding: 33px 36px 41px 25px;
     margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__link {
-    padding: 48px 97px 45px 72px;
+    padding: 36px 97px 45px 72px;
   }
 }
 
 .main-footer__copyright {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin: 40px 0 22px 0;
+  margin: 40px 24px 22px;
   text-align: center;
   gap: 12px;
   justify-content: center;
@@ -105,14 +112,20 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__copyright {
-    padding: 45px 8px 42px 29px;
+    padding: 28px 0 42px 71px;
     margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__copyright {
-    padding: 43px 0 42px 36px;
+    padding: 31px 0 0 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__copyright--copyright {
+    padding: 31px 0 0 45px;
   }
 }
 
@@ -124,29 +137,36 @@
   display: block;
   width: 48px;
   height: 48px;
+  color: #ffffff;
 
   &:hover {
     background-color: #669ec0;
   }
 
   &:active {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .main-footer__social-item {
+  position: relative;
   display: inline-block;
 }
 
-.main-footer__social-link--vkontakte {
-  background-image: url("../img/vkontakte.png");
+.main-footer__social-telegram {
+  position: absolute;
+  top: 17px;
+  left: 14px;
 }
 
-.main-footer__social-link--telegram {
-  background-image: url("../img/telegram.png");
+.main-footer__social-youtube {
+  position: absolute;
+  top: 17px;
+  left: 14px;
 }
 
-.main-footer__social-link--youtube {
-  background-image: url("../img/youtube.png");
+.main-footer__social-vkontakte {
+  position: absolute;
+  top: 15px;
+  left: 14px;
 }
