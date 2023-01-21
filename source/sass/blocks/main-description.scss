@@ -130,7 +130,7 @@
   .main-description__text:nth-child(1) {
     position: relative;
     min-height: 118px;
-    padding: 38px 23px 21px;
+    padding: 38px 22px 21px;
     order: 0;
     background-image: none;
   }
@@ -311,12 +311,6 @@
 @media (min-width: $desktop-width) {
   .main-description__slogan-endure-mob {
     display: inline;
-  }
-}
-
-@media (min-width: $mobile-width-only) {
-  .main-description__slogan-transfer {
-    display: none;
   }
 }
 
@@ -503,7 +497,7 @@
 @media (min-width: $tablet-width) {
   .main-description__text--bridge {
     position: relative;
-    padding: 37px 41px 19px;
+    padding: 37px 39px 19px;
     order: 0;
   }
 }
