@@ -1,6 +1,6 @@
 .description-catalog {
   display: grid;
-  grid-template-rows: 214px max-content;
+  grid-template-rows: 162px max-content;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -11,6 +11,7 @@
   background-size: 100%;
   text-transform: uppercase;
   background-color: #e6e6e6;
+  background-position-y: -40px;
   margin: 0;
   z-index: -1;
 
@@ -55,8 +56,14 @@
 @media (min-width: $tablet-width) {
   .description-catalog__image {
     margin-top: 95px;
-    width: 456px;
+    width: 467px;
     height: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog__image {
+    margin-top: 96px;
   }
 }
 
@@ -64,6 +71,7 @@
   .description-catalog {
     background-image: url("../img/back-tablet-form.jpg");
     grid-template-rows: 291px max-content;
+    background-position-y: -47px;
     z-index: 1;
 
     @media (min-resolution: 2dppx) {
@@ -77,7 +85,8 @@
   .description-catalog {
     background-image: url("../img/back-desktop-form.jpg");
     background-size: 100%;
-    grid-template-rows: 353px max-content;
+    grid-template-rows: 299px max-content;
+    background-position-y: -56px;
   }
 }
 
@@ -88,7 +97,19 @@
   line-height: 21px;
   margin: 0;
   text-align: center;
-  padding: 0 0 32px 0;
+  padding: 7px 0 31px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description-catalog__slogan {
+    margin-bottom: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog__slogan {
+    padding-top: 0;
+  }
 }
 
 .description-catalog__container {
@@ -103,19 +124,20 @@
 }
 
 .description-catalog__container__text {
-  padding: 36px 10px 0 10px;
-  margin-bottom: 56px;
+  padding: 19px 7px 0 10px;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .description-catalog__container__text {
-    padding: 64px 150px 102px 150px;
+    padding: 20px 7px 0 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description-catalog__container__text {
-    padding: 115px 380px 67px 380px;
+    padding: 89px 380px 37px 380px;
+    margin: 0;
   }
 }
 
@@ -127,6 +149,14 @@
 @media (min-width: $tablet-width) {
   .description-catalog__title {
     font-size: 30px;
+    margin-bottom: 14px;
+    margin-top: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-catalog__title {
+    margin-bottom: 33px;
   }
 }
 

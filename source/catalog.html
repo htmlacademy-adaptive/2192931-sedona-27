@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/favicon-1.png"  type="image/png">
-  <link rel="icon" href="img/favicons/favicon-32.png"  type="image/png">
+  <link rel="icon" href="img/favicons/favicon-1.png" type="image/png">
+  <link rel="icon" href="img/favicons/favicon-32.png" type="image/png">
   <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-favicon.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -15,25 +15,17 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo" href="#">
-        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
-      </a>
-      <nav class="main-nav main-nav--opened  main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-header__wrapper"><a class="main-header__logo" href="#"><img class="main-header__logo-image"
+          src="img/logo.svg" width="185" height="96" alt="Седона"></a>
+      <nav class="main-nav main-nav--opened main-nav--nojs"><button class="main-nav__toggle" type="button"><span
+            class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-item-link" href="index.html">Главная</a>
+          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="index.html">Главная</a></li>
+          <li class="main-nav__list-item main-nav__list-item--active"><a
+              class="main-nav__list-item-link main-nav__list-item-link--active" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a class="main-nav__list-item-link main-nav__list-item-link--active" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-item-link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-item-link" href="#">HTML Academy</a>
-          </li>
+          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
@@ -43,78 +35,75 @@
       <div class="photo-block__wrapper">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/text-sedona-desktop-catalog.svg">
-          <source media="(min-width: 768px)" srcset="img/sedona-large.svg">
-        <img class="photo-block__image" src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
+          <source media="(min-width: 768px)" srcset="img/sedona-large.svg"><img class="photo-block__image"
+            src="img/mobile-sedona.svg" width="229" height="39" alt="Логотип города">
         </picture>
       </div>
       <div class="photo-block__text">
         <h1 class="photo-block__title">Фото и видео</h1>
-        <p class="photo-block__slogan">Не можете решиться на путешествие<br class="photo-block__slogan-transfer">
-          из-за курса?<br class="photo-block__slogan-endure"> Фотографии помогут вам<br
-            class="photo-block__slogan-transfer"> забыть о
-          политике и экономике.</p>
+        <p class="photo-block__slogan">Не можете решиться на путешествие<br class="photo-block__slogan-transfer">&nbsp;из-за
+          курса?<br class="photo-block__slogan-endure">&nbsp;Фотографии помогут вам<br
+            class="photo-block__slogan-transfer">&nbsp;забыть о политике и экономике.</p>
       </div>
     </section>
     <section class="catalog">
       <ul class="catalog__list">
-        <li class="catalog__list-item">
-          <a class="catalog__list-item-link">
+        <li class="catalog__list-item"><a class="catalog__list-item-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop-first.jpg 1x, img/photo-1-desktop-retina-second.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-desktop-retina.jpg 2x">
-            <img class="catalog__list-item-image" src="img/photo-1-mobile.jpg" width="280" height="280" srcset="img/photo-1-mobile-retina.jpg 2x"
-              alt="Фрагмент дороги">
-              </picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-1-desktop-first.jpg, img/photo-1-desktop-retina-second.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg, img/photo-1-desktop-retina.jpg 2x"><img
+                class="catalog__list-item-image" src="img/photo-1-mobile.jpg" width="280" height="280"
+                srcset="img/photo-1-mobile-retina.jpg 2x" alt="Фрагмент дороги">
+            </picture>
           </a>
           <div class="catalog__list-item-text">
             <h2 class="catalog__list-item-title">Народные просторы</h2>
-            <p class="catalog__list-item-slogan">Автор фото: Борис</p>
-            <button class="catalog__list-item-button" type="button">1350</button>
+            <p class="catalog__list-item-slogan">Автор фото: Борис</p><button class="catalog__list-item-button"
+              type="button">1350</button>
           </div>
         </li>
-        <li class="catalog__list-item">
-          <a class="catalog__list-item-link">
+        <li class="catalog__list-item"><a class="catalog__list-item-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop-second.jpg 1x, img/photo-1-desktop-retina.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet-retina.jpg 2x">
-            <img class="catalog__list-item-image catalog__list-item-image--vegetation" src="img/photo-2-mobile-first.jpg"
-              width="280" height="280" alt="Фрагмент местной растительности">
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-2-desktop-second.jpg, img/photo-1-desktop-retina.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet-retina.jpg 2x"><img
+                class="catalog__list-item-image catalog__list-item-image--vegetation" src="img/photo-2-mobile-first.jpg"
+                width="280" height="280" alt="Фрагмент местной растительности">
             </picture>
           </a>
           <div class="catalog__list-item-text">
             <h2 class="catalog__list-item-title">Местная растительность</h2>
-            <p class="catalog__list-item-slogan">Автор фото: Сергей</p>
-            <button class="catalog__list-item-button" type="button">143</button>
+            <p class="catalog__list-item-slogan">Автор фото: Сергей</p><button class="catalog__list-item-button"
+              type="button">143</button>
           </div>
         </li>
-        <li class="catalog__list-item">
-          <a class="catalog__list-item-link">
+        <li class="catalog__list-item"><a class="catalog__list-item-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop-retina.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet-retina.jpg 2x">
-            <img class="catalog__list-item-image catalog__list-item-image--vegetation" src="img/photo-3-mobile.jpg" width="280" height="280"
-              alt="Фрагмент дороги Север">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop-retina.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet-retina.jpg 2x"><img
+                class="catalog__list-item-image catalog__list-item-image--vegetation" src="img/photo-3-mobile.jpg"
+                width="280" height="280" alt="Фрагмент дороги Север">
             </picture>
           </a>
           <div class="catalog__list-item-text">
             <h2 class="catalog__list-item-title">Дорога на север</h2>
-            <p class="catalog__list-item-slogan">Автор фото: Петр</p>
-            <button class="catalog__list-item-button" type="button">96</button>
+            <p class="catalog__list-item-slogan">Автор фото: Петр</p><button class="catalog__list-item-button"
+              type="button">96</button>
           </div>
         </li>
-        <li class="catalog__list-item">
-          <a class="catalog__list-item-link">
+        <li class="catalog__list-item"><a class="catalog__list-item-link">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/desktop-bridge-3.jpg 1x, img/photo-4-desktop-retina.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet-bridge-2.jpg 1x, img/photo-4-tablet-retina.jpg 2x">
-            <img class="catalog__list-item-image catalog__list-item-image--canyon" src="img/photo-4-desktop.jpg" width="280" height="280"
-              alt="Фрагмент дороги">
+              <source media="(min-width: 1200px)" srcset="img/desktop-bridge-3.jpg, img/photo-4-desktop-retina.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/tablet-bridge-2.jpg, img/photo-4-tablet-retina.jpg 2x"><img
+                class="catalog__list-item-image catalog__list-item-image--canyon" src="img/photo-4-desktop.jpg"
+                width="280" height="280" alt="Фрагмент дороги">
             </picture>
           </a>
           <div class="catalog__list-item-text">
             <h2 class="catalog__list-item-title">Мост дьявола</h2>
-            <p class="catalog__list-item-slogan">Автор фото: Антон</p>
-            <button class="catalog__list-item-button" type="button">254</button>
+            <p class="catalog__list-item-slogan">Автор фото: Антон</p><button class="catalog__list-item-button"
+              type="button">254</button>
           </div>
         </li>
       </ul>
@@ -122,45 +111,47 @@
     <section class="video">
       <div class="video__text">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__slogan">Смотрите видеопрезентацию и<br class="video__slogan-transfer"> скорее за билетами, пока
-          они<br class="video__slogan-endure">
-          не<br class="video__slogan-transfer"> подорожали в очередной раз!</p>
+        <p class="video__slogan">Смотрите видеопрезентацию и<br class="video__slogan-transfer">&nbsp;скорее за билетами, пока
+          они<br class="video__slogan-endure">&nbsp;не<br class="video__slogan-transfer">&nbsp;подорожали в очередной раз!</p>
       </div>
       <div class="video__video">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop-retina.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet-retina.jpg 2x">
-        <img class="video__video-image" src="img/video-mobile.jpg" width="280" height="177" alt="Заставка видеоролика">
-        </picture>
-        <button class="video__video__button" type="button"><span class="visually-hidden">play</span></button>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop-retina.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet-retina.jpg 2x"><img
+            class="video__video-image" src="img/video-mobile.jpg" width="280" height="177" alt="Заставка видеоролика">
+        </picture><button class="video__video__button" type="button"><span class="visually-hidden">play</span></button>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <b class="main-footer__link">#visitsedona</b>
+    <div class="main-footer__wrapper"><b class="main-footer__link">#visitsedona</b>
       <div class="main-footer__social social">
         <ul class="main-footer__social__list">
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--vkontakte"
-              href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
-          </li>
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy"><span
-                class="visually-hidden">Мы в Телеграме</span></a>
-          </li>
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--youtube"
-              href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в
-                Ютубе</span></a>
-          </li>
+          <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--vkontakte"
+              href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span>
+              <svg class="main-footer__social-vkontakte"
+              width="24" height="18">
+              <use href="img/sprite.svg#icon-vkontakte"></use></svg>
+            </a></li>
+          <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--telegram"
+              href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span>
+              <svg class="main-footer__social-telegram"
+              width="22" height="18">
+              <use href="img/sprite.svg#icon-telegram"></use></svg>
+              </a></li>
+          <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="main-footer__social-youtube"
+              width="20" height="14">
+              <use href="img/sprite.svg#icon-youtube"></use></svg>
+            </a></li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span></a>
-      </div>
+      <div class="main-footer__copyright main-footer__copyright--copyright"><a
+          class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span><svg class="main-footer__copyright-icon-academy"
+            width="82" height="68">
+            <use href="img/sprite.svg#icon-academy"></use></svg></a></div>
     </div>
   </footer>
   <script src="js/script.js"></script>

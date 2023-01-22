@@ -1,16 +1,7 @@
 .main-nav__list {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
   display: none;
-  height: 56px;
-
-  &--active {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-  }
 }
 
 .main-nav__list-item-link {
@@ -29,9 +20,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 17px;
     color: #000000;
     width: 100%;
+    padding: 17px 26px 16px 17px;
   }
 }
 
@@ -69,6 +60,21 @@
   width: 100%;
 }
 
+.main-nav--closed {
+  .main-nav__list {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+}
+
+.main-nav--nojs {
+  padding-top: 100px;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 100%;
@@ -104,14 +110,30 @@
     }
 
     &:nth-child(3) {
-      margin-left: auto;
+      margin-right: -25px;
+      width: 176px;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list-item--academy {
+    width: 165px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list-item {
     width: 240px;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+
+    &:nth-child(3) {
+      margin-right: 46px;
+      width: 151px;
+    }
   }
 }
 
@@ -202,11 +224,6 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
-}
-
-.main-nav--nojs {
-  position: static;
-  padding-top: 47px;
 }
 
 .main-nav--nojs .main-nav__list-item-link {

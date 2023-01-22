@@ -1,7 +1,7 @@
 .description {
   position: relative;
   display: grid;
-  grid-template-rows: 366px max-content;
+  grid-template-rows: 391px max-content;
   font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -10,7 +10,8 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #e6e6e6;
+  background-color: #dfecf1;
+  background-position-y: 23px;
   text-transform: uppercase;
   margin: 0 auto;
   z-index: 0;
@@ -18,6 +19,20 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile-retina.jpg");
     background-size: 901px auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    background-image: url("../img/desktop-index-back.jpg");
+    grid-template-rows: 516px max-content;
+    margin: auto;
+    background-position-y: 9px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-retina.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -55,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .description__text {
-    padding: 47px 127px 55px 127px;
+    padding: 50px 123px 54px 127px;
   }
 }
 
@@ -76,6 +91,14 @@
   .description__title {
     font-size: 21px;
     line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__title {
+    font-size: 21px;
+    line-height: 26px;
+    word-spacing: 8px;
   }
 }
 
@@ -102,23 +125,12 @@
   list-style-type: none;
 }
 
-@media (min-width: $tablet-width) {
-  .description {
-    background-image: url("../img/desktop-index-back.jpg");
-    grid-template-rows: 510px max-content;
-    margin: auto;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop-retina.jpg");
-      background-size: 1200px auto;
-    }
-  }
-}
-
 @media (min-width: $desktop-width) {
   .description {
     background-image: url("../img/back-desktop.jpg");
     z-index: 1;
+    grid-template-rows: 517px max-content;
+    background-position-y: 0;
   }
 }
 
@@ -129,6 +141,18 @@
   text-align: center;
   margin: 0;
   padding-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .description__slogan {
+    padding-top: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__slogan {
+    padding-top: 30px;
+  }
 }
 
 .description__image {

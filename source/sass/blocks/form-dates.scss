@@ -18,6 +18,7 @@
   }
 }
 
+
 @media (min-width: $tablet-width) {
   .form-dates::before {
     content: "";
@@ -27,7 +28,18 @@
     height: 338px;
     background-color: #e5e5e5;
     width: 1px;
-    //transform: rotate(90deg);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-dates::before {
+    content: "";
+    position: absolute;
+    right: -14px;
+    top: 0;
+    height: 338px;
+    background-color: #e5e5e5;
+    width: 1px;
   }
 }
 
@@ -46,6 +58,7 @@
 
 .form-dates__field {
   @include block-title;
+  font-size: 18px;
   width: 100%;
   border: none;
   background-color: #f2f2f2;
@@ -53,6 +66,12 @@
   padding-left: 16px;
   padding-bottom: 16px;
   padding-right: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-dates__field {
+    font-size: 18px;
+  }
 }
 
 .form-dates__field::placeholder {
@@ -70,22 +89,31 @@
   .form-dates__title {
     font-size: 21px;
     margin-bottom: 28px;
+    margin-left: 48px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-dates__title {
+    margin-bottom: 28px;
+    margin-left: 13px;
     margin-top: 0;
   }
 }
 
 .form-dates__wrapper {
-  padding: 0 20px 39px 20px;
+  padding: 0 12px 20px 12px;
 }
 
 @media (min-width: $tablet-width) {
   .form-dates__wrapper {
-    padding: 0 43px 63px 60px;
+    padding: 0 43px 47px 53px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-dates__wrapper {
-    padding: 0 63px 43px 0;
+    padding: 0 50px 43px 0;
   }
 }

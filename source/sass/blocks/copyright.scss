@@ -1,9 +1,17 @@
-.copyright__link {
-  background-image: url("../img/htmlacademy.svg");
-  background-position: center;
+.main-footer__copyright-link {
   display: block;
-  width: 27px;
+  width: 170px;
   height: 32px;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+
+    &:active {
+      opacity: 0.3;
+      color: #000000;
+    }
+  }
 }
 
 .copyright__text {

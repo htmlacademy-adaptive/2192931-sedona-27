@@ -5,31 +5,40 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .video__text {
   margin: 0;
   text-align: center;
-  padding: 17px 0 38px 0;
+  padding: 0 0 38px 0;
 }
 
 @media (min-width: $tablet-width) {
   .video__text {
     padding-top: 58px;
     font-size: 30px;
+    margin-bottom: 52px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .video__text {
     padding-top: 62px;
+    margin: 0;
   }
 }
 
 .video__title {
   margin: 0;
+  font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__title {
+    font-size: 30px;
+  }
 }
 
 .video__video-image {
@@ -54,9 +63,10 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: 52px;
+    margin-left: 52px;
     font-size: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -64,6 +74,7 @@
   .video {
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 60px;
   }
 }
 
@@ -72,7 +83,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 0;
+  margin-bottom: 2px;
+  margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__slogan {
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__slogan {
+    margin-bottom: 48px;
+    padding-top: 0;
+  }
 }
 
 .video__slogan-transfer {
@@ -106,6 +131,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .video__video {
+    margin-bottom: 40px;
+  }
 }
 
 .video__video__button {
