@@ -70,13 +70,13 @@
 
 @media (min-width: $tablet-width) {
   .description__text {
-    padding: 50px 123px 54px 127px;
+    padding: 51px 129px 52px 127px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description__text {
-    padding: 59px 357px 44px 357px;
+    padding: 59px 354px 41px;
   }
 }
 
@@ -98,7 +98,7 @@
   .description__title {
     font-size: 21px;
     line-height: 26px;
-    word-spacing: 8px;
+    word-spacing: 1px;
   }
 }
 
@@ -140,18 +140,21 @@
   line-height: 21px;
   text-align: center;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 37px;
+  padding-left: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .description__slogan {
-    padding-top: 31px;
+    padding: 27px 0 3px 3px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .description__slogan {
     padding-top: 30px;
+    padding-left: 0;
+    padding-right: 1px;
   }
 }
 

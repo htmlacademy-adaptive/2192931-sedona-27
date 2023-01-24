@@ -18,17 +18,18 @@
 .order__link.button {
   display: block;
   width: 284px;
-  padding: 16px 49px 16px 49px;
+  padding: 17px 19px 13px 52px;
+  margin: auto;
 }
 
 .order__text {
-  padding: 25px 0 0 0;
+  padding: 16px 0 0 0;
   text-align: center;
   color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
   margin-top: 0;
 }
 
@@ -87,8 +88,9 @@
 }
 
 .order__title {
-  margin-top: 17px;
-  margin-bottom: 0;
+  margin-top: 28px;
+  margin-left: 6px;
+  margin-bottom: 7px;
 }
 
 @media (min-width: $tablet-width) {
