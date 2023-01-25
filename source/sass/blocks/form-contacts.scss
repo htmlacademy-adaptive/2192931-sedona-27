@@ -50,12 +50,13 @@
   padding: 16px 0 16px 16px;
   width: 100%;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   background-image: url("../img/telephone.svg");
   background-repeat: no-repeat;
   background-position: right 0;
   padding-right: 80px;
+  padding-top: 17px;
 }
 
 @media (min-width: $desktop-width) {
@@ -93,8 +94,8 @@
   .form-contacts__title {
     font-size: 21px;
     margin-top: 0;
-    margin-bottom: 28px;
-    margin-right: 51px;
+    margin-bottom: 26px;
+    margin-right: 47px;
   }
 }
 
@@ -108,7 +109,7 @@
 
 @media (min-width: $tablet-width) {
   .form-contacts__wrapper {
-    padding: 0 52px 143px 44px;
+    padding: 0 49px 143px 46px;
   }
 }
 

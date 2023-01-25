@@ -24,8 +24,8 @@
           <li class="main-nav__list-item main-nav__list-item--active"><a
               class="main-nav__list-item-link main-nav__list-item-link--active" href="index.html">Главная</a></li>
           <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="form.html">Форма отзыва</a></li>
-          <li class="main-nav__list-item main-nav__list-item--academy"><a class="main-nav__list-item-link" href="#">HTML Academy</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__list-item-link main-nav__list-item-link-third" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__list-item main-nav__list-item--academy"><a class="main-nav__list-item-link main-nav__list-item-link-last" href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
@@ -40,7 +40,7 @@
         </picture>
       </div>
       <div class="description__text">
-        <h1 class="description__title">Седона-небольшой<br class="description__title-transfer-mobile">&nbsp;городок в
+        <h1 class="description__title">Седона — небольшой<br class="description__title-transfer-mobile">&nbsp;городок в
           Аризоне,<br class="description__title-transfer">заслуживающий большего!</h1>
         <p class="description__slogan">Рассмотрим 5 причин, по которым<br class="description__slogan-transfer">&nbsp;Седона
           круче, чем Гранд Каньон!</p>
@@ -72,14 +72,14 @@
                   class="attractions__description-endure">&nbsp;кино!</p>
             </li>
             <li class="attractions__item attractions__item--food">
-              <h3 class="attractions__title">Еда</h3>
+              <h3 class="attractions__title attractions__title--food">Еда</h3>
               <p class="attractions__description attractions__description--order">Всегда заказывайте<br
                   class="attractions__description-food-transfer">&nbsp;фирменный<br
                   class="attractions__description-food">&nbsp;бургер,<br class="attractions__description-food-endure">Вы не
                 разочаруетесь!</p>
             </li>
             <li class="attractions__item attractions__item--souvenirs">
-              <h3 class="attractions__title">Сувениры</h3>
+              <h3 class="attractions__title attractions__title-souvenirs">Сувениры</h3>
               <p class="attractions__description">Не только китайского,<br
                   class="attractions__description-souvenirs-transfer">но и<br
                   class="attractions__description-souvenirs">&nbsp;местного<br
@@ -103,10 +103,10 @@
         </li>
         <li class="main-description__item main-description__item--grey">
           <div class="main-description__text-grey main-description__text-grey--first">
-            <h3 class="main-description__item-title">Небольшая<br class="main-description__item-title-transfer">&nbsp;
+            <h3 class="main-description__item-title main-description__item-title--first">Небольшая<br class="main-description__item-title-transfer">&nbsp;
               площадь
             </h3>
-            <p class="main-description__item-slogan main-description__item-slogan--grey">Все интересные места<br
+            <p class="main-description__item-slogan main-description__item-slogan--first">Все интересные места<br
                 class="main-description__item-title-endure">&nbsp;находятся<br
                 class="main-description__item-title-transfer-endure">&nbsp;очень<br
                 class="main-description__item-title-transfer-middle">&nbsp;близко</p>
@@ -125,7 +125,7 @@
         <li class="main-description__item main-description__item--grey">
           <div class="main-description__text-grey">
             <h3 class="main-description__item-title">Мало<br class="main-description__item-title-transfer">&nbsp;туристов</h3>
-            <p class="main-description__item-slogan main-description__item-slogan--grey">Большинство едет в гранд<br
+            <p class="main-description__item-slogan main-description__item-slogan--last">Большинство едет в гранд<br
                 class="main-description__item-slogan-middle">&nbsp;каньон<br
                 class="main-description__item-slogan-transfer-endure">&nbsp;и<br
                 class="main-description__item-slogan-endure-middle">&nbsp;толпится там</p>
@@ -155,27 +155,26 @@
               href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span>
               <svg class="main-footer__social-vkontakte"
               width="24" height="18">
-              <use href="img/sprite.svg#icon-vkontakte"></use></svg>
+              <use xlink:href="img/sprite.svg#vk"></use></svg>
             </a></li>
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--telegram"
               href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span>
               <svg class="main-footer__social-telegram"
               width="22" height="18">
-              <use href="img/sprite.svg#icon-telegram"></use></svg>
+              <use href="img/sprite.svg#tg-icon"></use></svg>
               </a></li>
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--youtube"
               href="https://www.youtube.com/user/htmlacademyru">
               <svg class="main-footer__social-youtube"
               width="20" height="14">
-              <use href="img/sprite.svg#icon-youtube"></use></svg>
+              <use href="img/sprite.svg#youtube-icon"></use></svg>
             </a></li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright"><a
+      <div class="main-footer__copyright"><a
           class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span><svg class="main-footer__copyright-icon-academy"
-            width="82" height="68">
-            <use href="img/sprite.svg#icon-academy"></use></svg></a></div>
+            Academy</span>Разработано<svg class="main-footer__copyright-icon-academy"
+            width="27" height="34"><use href="img/sprite.svg#htmlacademylogo"></use></svg></a></div>
     </div>
   </footer>
   <script src="js/script.js"></script>

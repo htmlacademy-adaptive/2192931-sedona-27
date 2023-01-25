@@ -12,6 +12,19 @@
 .attractions__title {
   text-align: left;
   font-size: 18px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__title:nth-child(2) {
+    margin: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__title-souvenirs {
+    margin: 2px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,6 +51,7 @@
   .attractions__title {
     margin-bottom: 24px;
     margin-top: 28px;
+    margin-right: 9px;
   }
 }
 
@@ -51,14 +65,14 @@
   background-image: url("../img/icon-burger-mobile.svg");
   background-repeat: no-repeat;
   background-position: 13px 11px;
-  padding: 1px 0 13px 60px;
+  padding: 1px 0 13px 58px;
 }
 
 @media (min-width: $tablet-width) {
   .attractions__item--food {
     background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
-    background-position: 51% 23%;
+    background-position: 50% 23%;
   }
 }
 
@@ -73,15 +87,15 @@
 .attractions__item--souvenirs {
   background-image: url("../img/icon-gift-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 18px 11px;
-  padding: 1px 0 42px 60px;
+  background-position: 16px 11px;
+  padding: 1px 0 46px 58px;
 }
 
 @media (min-width: $tablet-width) {
   .attractions__item--souvenirs {
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
-    background-position: 56% 24%;
+    background-position: 55% 25%;
   }
 }
 
@@ -96,14 +110,15 @@
 .attractions__item--housing {
   background-image: url("../img/icon-house-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 13px 25px;
+  background-position: 13px 23px;
+  padding-left: 58px;
 }
 
 @media (min-width: $tablet-width) {
   .attractions__item--housing {
     background-image: url("../img/icon-house.svg");
     background-repeat: no-repeat;
-    background-position: 48% 23%;
+    background-position: 47% 23%;
   }
 }
 
@@ -115,7 +130,31 @@
 
 @media (min-width: $tablet-width) {
   .attractions__item {
-    padding: 129px 0 63px 12px;
+    padding: 135px 6px 63px 1px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__item:nth-child(2) {
+    padding: 134px 0 63px 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__item:nth-child(2) {
+    padding: 138px 0 58px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .attractions__item:nth-child(3) {
+    padding: 131px 0 63px 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .attractions__item:nth-child(3) {
+    padding: 142px 0 63px 2px;
   }
 }
 
@@ -141,7 +180,7 @@
 
 @media (min-width: $desktop-width) {
   .attractions__description {
-    padding: 0 7px 0 0;
+    padding: 0;
   }
 }
 

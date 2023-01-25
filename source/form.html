@@ -21,11 +21,11 @@
       <nav class="main-nav main-nav--opened main-nav--nojs"><button class="main-nav__toggle" type="button"><span
             class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="index.html">Главная</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a></li>
           <li class="main-nav__list-item main-nav__list-item--active"><a
-              class="main-nav__list-item-link main-nav__list-item-link--active" href="form.html">Форма отзыва</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#">HTML Academy</a></li>
+              class="main-nav__list-item-link main-nav__list-item-link--active" href="index.html">Главная</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__list-item-link main-nav__list-item-link-third" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__list-item main-nav__list-item--academy"><a class="main-nav__list-item-link main-nav__list-item-link-last" href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
@@ -138,33 +138,37 @@
         <ul class="main-footer__social__list">
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--vkontakte"
               href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span>
-              <svg class="main-footer__social-vkontakte" width="24" height="18">
-                <use href="img/sprite.svg#icon-vkontakte"></use></svg></a></li>
+              <svg class="main-footer__social-vkontakte"
+              width="24" height="18">
+              <use href="img/sprite.svg#vk"></use></svg>
+            </a></li>
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--telegram"
               href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span>
-              <svg class="main-footer__social-telegram" width="22" height="18">
-                <use href="img/sprite.svg#icon-telegram"></use></svg>
-            </a></li>
+              <svg class="main-footer__social-telegram"
+              width="22" height="18">
+              <use href="img/sprite.svg#tg-icon"></use></svg>
+              </a></li>
           <li class="main-footer__social-item"><a class="main-footer__social-link main-footer__social-link--youtube"
               href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="main-footer__social-youtube" width="20" height="14">
-                <use href="img/sprite.svg#icon-youtube"></use></svg>
+              <svg class="main-footer__social-youtube"
+              width="20" height="14">
+              <use href="img/sprite.svg#youtube-icon"></use></svg>
             </a></li>
         </ul>
       </div>
-      <div class="main-footer__copyright main-footer__copyright--copyright"><a class="main-footer__copyright-link"
-          href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span><svg class="main-footer__copyright-icon-academy" width="82" height="68">
-            <use href="img/sprite.svg#icon-academy"></use></svg></a></div>
+      <div class="main-footer__copyright copyright"><a
+          class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span>Разработано<svg class="main-footer__copyright-icon-academy"
+            width="27" height="34"><use href="img/sprite.svg#htmlacademylogo"></use></svg></a></div>
     </div>
   </footer>
-  <div class="modal modal-close">
-    <div class="modal-container">
-      <div class="modal-container__block-open">
-        <h1 class="modal__title">Что-то пошло<br class="modal__slogan-transfer">не так!</h1>
-        <p class="modal__slogan">Проверьте поля, выделенные<br class="modal__slogan-endure">красным,<br
-            class="modal__slogan-transfer">скорее всего вы<br class="modal__slogan-endure">забыли их заполнить</p>
-        <button class="modal__button">Ок</button>
+  <div class="modal-open">
+    <div class="modal-open-container">
+      <div class="modal-open-container__block">
+        <h1 class="modal-open__title">Что-то пошло<br class="modal-open__slogan-transfer">&nbsp;не так!</h1>
+        <p class="modal-open__slogan">Проверьте поля, выделенные<br class="modal-open__slogan-endure">&nbsp;красным,<br
+            class="modal-open__slogan-transfer">скорее всего вы<br class="modal-open__slogan-endure">&nbsp;забыли их заполнить</p>
+        <button class="modal-open__button">Ок</button>
       </div>
     </div>
   </div>
@@ -172,9 +176,9 @@
     <div class="modal-container">
       <div class="modal-container__block">
         <h1 class="modal__title">Ваш отзыв отправлен!</h1>
-        <p class="modal__slogan">Спасибо за ваше участие, ваш<br class="modal__slogan-endure">отзыв уже поступил к
-          нам.<br class="modal__slogan-transfer">В ближайшее время мы<br class="modal__slogan-endure">опубликуем его на
-          сайте.</p><button class="modal__button">Ок</button>
+        <p class="modal__slogan">Спасибо за ваше участие, ваш<br class="modal__slogan-endure">&nbsp;отзыв уже поступил к
+          нам.&nbsp;<br class="modal__slogan-transfer">В ближайшее время мы<br class="modal__slogan-endure">&nbsp;опубликуем его на
+          сайте.</p><div class="modal-container__wrapper"><button class="modal__button">Закрыть окно</button></div>
       </div>
     </div>
   </div>

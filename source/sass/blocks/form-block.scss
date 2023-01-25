@@ -94,7 +94,7 @@
 @media (min-width: $tablet-width) {
   .form-block__title {
     font-size: 21px;
-    padding: 0 123px 0 123px;
+    padding: 0 20px 0 26px;
     margin-bottom: 28px;
   }
 }
@@ -104,7 +104,7 @@
     content: "";
     position: absolute;
     top: 12px;
-    left: 0;
+    left: -6px;
     height: 1px;
     background-color: #e5e5e5;
     width: 123px;
@@ -116,7 +116,7 @@
     content: "";
     position: absolute;
     top: 12px;
-    right: 0;
+    right: -10px;
     height: 1px;
     background-color: #e5e5e5;
     width: 123px;
