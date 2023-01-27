@@ -124,19 +124,19 @@
   }
 }
 
-.description-catalog__container__text {
+.description-catalog__container-text {
   padding: 19px 7px 0 10px;
   margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .description-catalog__container__text {
+  .description-catalog__container-text {
     padding: 20px 7px 0 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .description-catalog__container__text {
+  .description-catalog__container-text {
     padding: 70px 380px 37px;
     margin: 0;
   }

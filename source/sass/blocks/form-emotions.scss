@@ -198,6 +198,10 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
+.form-emotions__submit:disabled {
+  background-color: #e5e5e5;
+}
+
 @media (min-width: $tablet-width) {
   .form-emotions__submit {
     padding: 18px 71px 12px 70px;

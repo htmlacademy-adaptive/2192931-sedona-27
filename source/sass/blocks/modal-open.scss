@@ -1,4 +1,4 @@
-.modal {
+.modal-open {
   display: none;
   text-transform: uppercase;
   font-family: "ptsans", sans-serif;
@@ -11,45 +11,44 @@
   margin: auto;
 }
 
-.modal__slogan {
+.modal-open__slogan {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding-bottom: 55px;
-  padding-left: 7px;
+  padding-bottom: 29px;
+  padding-left: 4px;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .modal__slogan {
-    padding-bottom: 52px;
-    padding-left: 0;
+  .modal-open__slogan {
+    padding-bottom: 49px;
+    padding-left: 7px;
   }
 }
 
-.modal__title {
-  margin: -9px 30px 24px 5px;
+.modal-open__title {
+  margin: -1px 22px 24px 1px;
   font-size: 18px;
   width: 100%;
 }
 
 @media (min-width: $tablet-width) {
-  .modal__title {
-    font-weight: 700;
+  .modal-open__title {
     font-size: 30px;
-    line-height: 40px;
     margin-bottom: 22px;
-    margin-left: -2px;
+    margin-top: 2px;
+    line-height: 40px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .modal__title {
-    margin-bottom: 25px;
+@media (min-width: $desktop-width) {
+  .modal-open__title {
+    margin-bottom: 27px;
   }
 }
 
-.modal__button {
+.modal-open__button {
   text-transform: uppercase;
   font-family: "ptsans", sans-serif;
   font-style: normal;
@@ -59,44 +58,48 @@
   border: none;
   color: #ffffff;
   background-color: #81b3d2;
-  width: 280px;
+  width: 180px;
   height: 58px;
   margin-bottom: 16px;
-  padding: 11px 4px 5px 8px;
+  padding: 9px 4px 5px 8px;
 }
 
 @media (min-width: $tablet-width) {
-  .modal__button {
-    width: 457px;
-    height: 58px;
-    font-size: 21px;
+  .modal-open__button {
+    width: 271px;
   }
 }
 
-.modal__button:hover {
+@media (min-width: $desktop-width) {
+  .modal-open__button {
+    margin-top: -3px;
+  }
+}
+
+.modal-open__button:hover {
   background-color: #669ec0;
 }
 
-.modal__button:active {
+.modal-open__button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.modal__slogan-endure {
+.modal-open__slogan-endure {
   display: inline;
 }
 
 @media (min-width: $tablet-width) {
-  .modal__slogan-endure {
+  .modal-open__slogan-endure {
     display: none;
   }
 }
 
-.modal__slogan-transfer {
-  display: inline;
+.modal-open__slogan-transfer {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .modal__slogan-transfer {
+  .modal-open__slogan-transfer {
     display: inline;
   }
 }

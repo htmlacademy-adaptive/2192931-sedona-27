@@ -9,6 +9,23 @@
   margin: 0 auto;
 }
 
+.main-footer__copyright-link {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  height: 32px;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+
+    &:active {
+      opacity: 0.3;
+      color: #000000;
+    }
+  }
+}
+
 .main-footer__copyright-icon-academy {
   margin: -27px 2px 18px 142px;
 }

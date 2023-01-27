@@ -55,11 +55,20 @@
   width: 100%;
   height: 350px;
   margin-bottom: 13px;
+  background-image: url("../img/map-tablet.jpg");
 }
 
 @media (min-width: $desktop-width) {
   .order__card-image {
     margin-top: 7px;
+    background-image: url("../img/map-tablet.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__card-image {
+    margin-top: 7px;
+    background-image: url("../img/map-desktop.jpg");
   }
 }
 
