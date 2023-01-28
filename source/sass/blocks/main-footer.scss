@@ -1,5 +1,4 @@
 .main-footer {
-  font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -122,7 +121,7 @@
 
 .main-footer__copyright {
   text-decoration: none;
-  font-family: "ptsans", sans-serif;
+  font-family: "ptsans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -140,19 +139,6 @@
   .main-footer__copyright {
     padding: 37px 57px 54px 10px;
     margin: 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .copyright {
-    padding: 37px 28px 54px 10px;
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright {
-    margin: 0 4px 54px 34px;
   }
 }
 

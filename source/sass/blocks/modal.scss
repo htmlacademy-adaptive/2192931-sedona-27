@@ -1,7 +1,7 @@
 .modal {
   display: none;
   text-transform: uppercase;
-  font-family: "ptsans", sans-serif;
+  font-family: "ptsans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -51,7 +51,7 @@
 
 .modal__button {
   text-transform: uppercase;
-  font-family: "ptsans", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;

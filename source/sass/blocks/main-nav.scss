@@ -25,6 +25,18 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list-item-link:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list-item-link:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list-item-link:hover {
     background-color: #ffffff;
 
     &:active {

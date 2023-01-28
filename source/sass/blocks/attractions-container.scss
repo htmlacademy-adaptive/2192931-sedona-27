@@ -133,6 +133,7 @@
   background-color: #333333;
   width: 21px;
   height: 3px;
+  font-family: inherit;
 }
 
 .attractions-container__checkbox:checked + .attractions-container__label-control-mark::after {
