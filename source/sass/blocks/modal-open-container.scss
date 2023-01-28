@@ -1,0 +1,34 @@
+
+.modal-open-container__block {
+  background-color: #ffffff;
+  padding: 47px 2px 5px 1px;
+  height: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-open-container__block {
+    background-color: #ffffff;
+    padding: 45px 42px 35px 42px;
+    width: 400px;
+    height: 347px;
+  }
+}
+
+.modal-open-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-open-container {
+    align-items: center;
+  }
+}

@@ -1,22 +1,19 @@
-.main-footer__copyright-link {
-  text-decoration: none;
-  display: block;
-  width: 170px;
-  height: 32px;
-  color: #000000;
-
-  &:hover {
-    color: #81b3d2;
-
-    &:active {
-      opacity: 0.3;
-      color: #000000;
-    }
-  }
-}
 
 .copyright__text {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 37px 28px 54px 10px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin: 0 4px 54px 34px;
+  }
 }

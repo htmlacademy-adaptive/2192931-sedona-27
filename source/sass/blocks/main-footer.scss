@@ -1,5 +1,4 @@
 .main-footer {
-  font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -7,6 +6,23 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0 auto;
+}
+
+.main-footer__copyright-link {
+  text-decoration: none;
+  display: block;
+  width: 170px;
+  height: 32px;
+  color: #000000;
+
+  &:hover {
+    color: #81b3d2;
+
+    &:active {
+      opacity: 0.3;
+      color: #000000;
+    }
+  }
 }
 
 .main-footer__copyright-icon-academy {
@@ -105,7 +121,7 @@
 
 .main-footer__copyright {
   text-decoration: none;
-  font-family: "ptsans", sans-serif;
+  font-family: "ptsans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -123,19 +139,6 @@
   .main-footer__copyright {
     padding: 37px 57px 54px 10px;
     margin: 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .copyright {
-    padding: 37px 28px 54px 10px;
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright {
-    margin: 0 4px 54px 34px;
   }
 }
 

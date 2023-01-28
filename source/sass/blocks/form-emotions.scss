@@ -1,6 +1,6 @@
 .form-emotions__text-name {
+  font-family: inherit;
   position: relative;
-  font-family: "ptsans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -177,7 +177,7 @@
   background-color: #81b3d2;
   color: #ffffff;
   text-decoration: none;
-  font-family: "ptsans", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -196,6 +196,10 @@
 
 .form-emotions__submit:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.form-emotions__submit:disabled {
+  background-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {

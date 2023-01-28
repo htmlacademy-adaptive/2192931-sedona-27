@@ -25,6 +25,7 @@
   background-color: #000000;
   content: "";
   cursor: pointer;
+  font-family: inherit;
 }
 
 .form-block__radio:hover::before {
@@ -33,6 +34,10 @@
 
 .form-block__radio:active::before {
   opacity: 0.3;
+}
+
+.form-block__radio:focus::before {
+  outline: 2px solid #000000;
 }
 
 .form-block__input-radio:hover + .form-block__radio {
