@@ -157,11 +157,6 @@
   opacity: 0.3;
 }
 
-.attractions-container__label-control-mark:focus::after,
-.attractions-container__label-control-mark:focus::before {
-  outline: 2px solid #000000;
-}
-
 .attractions-container__checkbox:hover + .attractions-container__label-control-mark {
   background-color: #e5e5e5;
 }
@@ -171,5 +166,6 @@
 }
 
 .attractions-container__checkbox:focus + .attractions-container__label-control-mark {
-  opacity: 0.5;
+  background-color: #e5e5e5;
+  outline: 2px solid #000000;
 }
