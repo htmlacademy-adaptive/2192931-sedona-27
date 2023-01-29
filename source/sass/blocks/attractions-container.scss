@@ -169,3 +169,7 @@
 .attractions-container__checkbox:active + .attractions-container__label-control-mark {
   background-color: #d5d5d5;
 }
+
+.attractions-container__checkbox:focus + .attractions-container__label-control-mark {
+  opacity: 0.5;
+}
