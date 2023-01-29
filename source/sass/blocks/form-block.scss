@@ -48,6 +48,10 @@
   background-color: #d5d5d5;
 }
 
+.form-block__input-radio:focus + .form-block__radio {
+  opacity: 0.5;
+}
+
 @media (min-width: $tablet-width) {
   .form-block {
     margin-left: 60px;
